@@ -1,0 +1,35 @@
+fst (2,5)
+-- resultado: 2 (primeiro elemento da tupla)
+
+snd (5, "Bom dia")
+-- resultado: "Bom dia" (segundo elemento da tupla)
+
+fst(snd ("Ola", (1,2)))
+-- resultado: 1 (primeiro elemento da segunda tupla)
+
+snd(fst ("Ola", (1,2)))
+-- resultado: erro! ("Ola" não é uma tupla)
+
+(1,1) == (1,1)
+-- resultado: True (tuplas iguais)
+
+(1,1) /= (1,1)
+-- resultado: False
+
+(1,1) < (1,2)
+-- resultado: True (um elemento da 1a tupla é menor do que um da 2a)
+
+(2,1) < (1,2)
+-- resultado: False
+
+(1,2,3) < (1,2)
+-- resultado: erro! (tuplas de tamanho diferente)
+
+"azul" < "verde"
+-- resultado: True (compara strings de acordo com o valor de cada caracter na tabela ascii)
+
+"azul" < "amarelo"
+-- resultado: False
+
+(1,2,3) == (,,) 1 2 3
+-- resultado: True (diferentes formas de representar a mesma tupla)

@@ -1,0 +1,59 @@
+1 + 2 * 3
+-- resultado: 7
+
+5 ^ 3
+-- resultado: 125
+
+5 ** 3
+-- resultado: 125.0
+
+5 / 3
+-- resultado: 1.6666666666666667
+
+div 5 3
+-- resultado: 1 (resultado da divisao 5/3 sem resto)
+
+mod 5 3
+-- resultado: 2 (resto da divisao 5/3)
+
+5 < 3
+-- resultado: False (testa se 5 é menor que 3)
+
+mod 5 3 < 2
+-- resultado: False (testa se o resto da divisao 5/3 é menor que 2)
+
+mod 5 3 == 2
+-- resultado: True (testa se o resto da divisao 5/3 é igual a 2)
+
+sqrt 81
+-- resultado: 9.0 (raiz de 81)
+
+logBase 2 1024
+-- resultado: 10.0 (log de 1024 na base 2)
+
+floor 5.7
+-- resultado: 5 (remove a parte decimal e aproxima para o valor mais baixo)
+
+ceiling 5.7
+-- resultado: 6 (remove a parte decimal e aproxima para o valor mais alto)
+
+abs (-5)
+-- resultado: 5 (módulo do número)
+
+min 6 7
+-- resultado: 6 (menor número)
+
+max 6 7
+-- resultado: 7 (maior número)
+
+sin (pi/2)
+-- resultado: 1.0 (seno)
+
+sum [1..5]
+-- resultado: 15 (soma de 1+2+3+4+5)
+
+not True
+-- resultado: False (True invertido)
+
+True && False
+-- resultado: False (true and false = false)

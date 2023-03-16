@@ -1,0 +1,120 @@
+A questão Extra  pode substituir qualquer uma das três iniciais. Entretanto, você deve indicar qual questão está substituindo.
+
+Ao final da prova, o(a) aluno(a) deve anexar um arquivo texto com todas as questões.
+Colocar o nome e o código de matrícula no início do arquivo.
+O nome do arquivo deve ser o primeiro e ultimo nome do(a) aluno(a) concatenados. Ex: ginaoliveira.txt 
+
+
+
+ 1ª Questão
+
+Considere a função de ordenação abaixo, que é baseada na estratégia de ordenação quicksort e realiza a ordenação em ordem CRESCENTE. Essa é uma versão mais eficiente que a vista em sala, pois usa a função divide para percorrer a lista uma única vez, dividindo a lista original em maiores e menores que o pivô.
+
+quicksort2::(Ord a) => [a] -> [a]
+
+quicksort2 [] = []
+
+quicksort2 [x] = [x]
+
+quicksort2 (s:xs) = quicksort2 lst1 ++ [s] ++ quicksort2 lst2
+
+  where (lst1,lst2) = divide s xs
+
+
+divide:: (Ord a) => a -> [a] -> ([a],[a])
+
+divide p [] = ([],[])
+
+divide p (x:xs) = if (x < p) then (x:l1,l2) else (l1,x:l2)
+
+  where (l1,l2) = divide p xs
+
+
+Altere a função para que além da lista ordenada, ela retorne o número de divisões efetivas de listas realizadas durante a ordenação. Para isso, implemente um contador que incrementa 1 na contagem, cada vez que uma lista é dividida entre maiores e menores que o pivô. Nesse caso, o contador desconsidera os casos de lista vazia e lista com um elemento, pois não existe divisão. Além disso, a nova ordenação deve ser DECRESCENTE.
+
+> quicksort3 [3,1,6,5,4,2,7]
+([7,6,5,4,3,2,1],4)
+
+> quicksort3 [4,2,6,3,5,1,7]
+
+([7,6,5,4,3,2,1],3)
+
+> quicksort3 [1,2,3,4,5,6,7]
+
+([7,6,5,4,3,2,1],6)
+
+2ª Questão
+
+Fazendo uso das funções genéricas map, filter, foldr e foldr1 e de funções anônimas desenvolva as funções solicitadas a seguir. Não é permitido o uso de lista por compreensão ou chamadas recursivas. Cada definição abaixo deve resultar em 1 linha de código e utilizar as funções genéricas (mais de uma função genérica em cada solução). 
+
+Não é permitido usar funções do módulo PRELUDE (ex: odd, even, etc). É permitido utilizar operadores matemáticos (+, -, *, /, mod) e operadores relacionais (>, <, ==). Qualquer função auxiliar necessária deve ser definida como função anônima (ex: \x->x+3). 
+
+a) totaliza: recebe uma lista de inteiros lst e devolve o produtório dos elementos de lst que são pares. Se nenhum elemento de lst for par, retorna 1.
+
+> totaliza [1,2,3,4,5]
+
+8
+
+> totaliza [1,3,5]
+
+1
+
+> totaliza [1,3,5,6]
+
+6
+
+b) addTriplas: recebe uma lista de triplas de inteiros (x,y,z) e devolve uma lista com a soma de cada tripla que atenda à restrição (x + y + z) é par
+
+> addTriplas [(2,5,7),(6,4,2),(4,3,8),(5,4,1)]
+
+[14,12,10]
+
+> addTriplas [(2,5,8),(4,3,8),(5,4,2)]
+
+[ ]
+
+> addTriplas [(2,5,8),(4,4,8),(5,4,2)]
+
+[16]
+
+
+3ª Questão
+
+Escreva a função buscaMult3 que realiza uma busca por um elemento inteiro que é múltiplo de 3 em uma árvore binária (considere a definição do tipo algébrico ArvBinInt abaixo). A função deve retornar o primeiro elemento encontrado (se ele existir) ou o valor “-1” se ele não existir. Além da árvore de entrada, a função recebe um paramêtro de entrada Tipo, uma string que indica qual o tipo de busca deve ser realizada: se Tipo = “pre”, realizar a busca em pré-ordem,  se Tipo = “sim”, realizar a busca em ordem, simétrica.
+
+data ArvoreBinInt = Nulo | No Int ArvoreBinInt ArvoreBinInt
+
+deriving (Show,Eq)
+
+Para o exemplo de árvore abaixo:
+
+arvEx = (No 7 (No 3 (No 6 Nulo Nulo) (No 1 (No 4 Nulo Nulo) Nulo)) (No 10 Nulo (No 14 Nulo Nulo)))
+
+> buscaMult3 arvEx “pre”
+
+3
+
+> buscaMult3 arvEx “sim”
+
+6
+
+
+4ª Questão (EXTRA)
+
+
+Extra: se o aluno optar por fazer essa questão, deve indicar qual questão está anulando.
+
+a) Defina um tipo algébrico Horario para modelar os horários do dia usando a convenção AntesMD (antes do meio-dia) e AposMD (após o meio-dia), que deve armazenar as horas, os minutos e os segundos. Os valores do tipo Horario são escritos na forma (AntesMD x y z) ou (AposMD x y z), sendo x,y e z valores do tipo Int representado hora, minutos e segundo, respectivamente.
+
+Ex: (AntesMD 3 23 12) para o horário 3:23:12 e (AposMD 2 48 56) para o horário 14:48:56
+
+
+b) Implemente a função maisTarde, que recebe dois horários do dia, definidos pelo tipo algébrico Horario, e essa função deve retornar a entrada que representar o horário mais avançado no dia. Exemplo de avaliação no GHC:
+
+> maisTarde (AntesMD 4 34 12) (AntesMD 12 44 02)
+
+(AntesMD 12 44 02)
+
+> maisTarde (AposMD 4 24 43) (AntesMD 4 34 30)
+
+(AposMD 4 24 43)

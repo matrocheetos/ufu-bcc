@@ -1,0 +1,58 @@
+01
+
+ Escreva a função figura que, dados três valores de ângulos (em graus) de um triangulo
+ (informados em ordem decrescente do maior para o menor ângulo), retorne o tipo do triângulo resultante
+ (como uma string). Os retornos podem ser:
+
+    “equilatero”: se os três ângulos são iguais
+
+    “retangulo”: se um dos ângulos é 90 graus
+
+    “obtuso”: se um dos ângulos é maior que 90 graus
+
+    “simples”: se não se enquadra em nenhum dos casos anteriores
+
+02
+
+ Escreva a função seleciona usando lista por compreensão, que recebe uma lista de sublistas de inteiros 
+ (por exemplo, [[1,6,3],[],[6,4],[2],[9,4,3],[3,5,5,5],[8]]).
+ Ela deve retornar a cauda das listas cujas cabeças são menores que 4 (em uma nova lista). 
+
+ No exemplo, retornar [[6,3],[],[5,5,5]].
+
+
+03
+ Usando apenas definições recursivas para manipular listas, defina a função recursiva remove_varios que dadas duas listas,
+ retira da primeira todos os elementos que ocorrem na segunda lista.
+ Atenção: não é possível utilizar as funções para manipulação de listas do módulo Prelude (ex: head, tail, elem, etc)..
+
+> remove_varios [1,2,5,5,3,5,2,1] [1,5] 
+[2,3,2] 
+
+> remove_varios  "programa" "aeiou" 
+"prgrm" 
+
+04
+ Implemente a função seque, que recebe duas listas e verifica se a segunda lista é uma sequência final da primeira.
+ Podemos dizer que as listas [],[1],[3,1],[2,3,1] e [1,2,3,1] são sequências finais da lista [1,2,3,1].
+
+> seque [1,2,3,1] [3,1] 
+True
+
+> seque [1,2,3,1] [1,2] 
+False
+
+
+05
+ Defina a função representante que recebe uma sequência de consoantes s e uma lista de 
+ palavras (dicionário) e retorna a lista das palavras do dicionário que são representadas
+ pela sequência s. Ou seja, quando as vogais são eliminadas de uma palavra do dicionário,
+ elas são representadas por uma sequência de consoantes que restam, incluindo repetições, e na mesma ordem. Ex: “vc” é a sequência que representa as palavras "vaca","vacuo","vicio", mas não representa "velho" e vermelho".
+
+Ex: 
+
+> dicionario = ["arara","arreio","haskell", "puxa","peixe","pixar","pixe", "vaca","vacuo","velho","vermelho","vicio"]
+
+> representante “vc” dicionario
+
+["vaca","vacuo","vicio"]
