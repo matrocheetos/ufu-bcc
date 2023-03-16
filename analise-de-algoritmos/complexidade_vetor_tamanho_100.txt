@@ -1,0 +1,10 @@
+``Qual a complexidade de ordenar um vetor de tamanho 100?''. Justifique
+
+
+
+
+A parte mais importante da questão é o justifique...
+
+Uma resposta: a análise assintótica de complexidade de algoritmos  modela os recursos gastos conforme o tamanho da entrada varia. As simplificações feitas pelo Ozao - eliminação de constantes aditivas e multiplicativas, por exemplo - só fazem sentido para um tamanho de entrada grande. Desta forma, determinar a complexidade de um problema cuja entrada tem tamanho fixo, nao faz sentido.
+
+Outra: gasta tempo O(1) pois é não existe crescimento. Ou ainda, é possivel justificar para qquer vetor de tamanho fixo  existe um algoritmo sem repetições (for/while/recursão) que ordena este vetor.
