@@ -1,0 +1,112 @@
+{
+  "uuid": "e928627ede961af5cb3b6b5f0c58f78d",
+  "path": "Offline/Pr%C3%A1tica-04",
+  "name": "Prática-04",
+  "content": "",
+  "created_at": "2020-09-09 17:09:50",
+  "updated_at": "2020-09-10 02:16:19",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "02d97d7a36fc9b766336f3218fc93882",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "294b5a537fae4e9a9fe9e974f85d412d": 1,
+        "0645729d199f44cd85bee7b810c23dfc": 1,
+        "574bf25f763142d1b201011589f1bdfc": 4,
+        "a5cb8fc803084158bb825edf2c7447ef": 11
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S2,S1,S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "74HC4511",
+          1,
+          "SOIC-16_L10.8-W4.5-P1.27-LS6.8-BL",
+          "U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "9149e151f6a74451b67053c373ffaaac",
+            "uuid": "0645729d199f44cd85bee7b810c23dfc"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R8,R9,R11,R10",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R18,R12,R13,R14,R15,R16,R17",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ]
+      ],
+      "updateTime": 1599714979,
+      "createTime": 1599685614,
+      "histories": [],
+      "created_at": "2020-09-09 18:06:54",
+      "updated_at": "2020-09-10 02:16:19"
+    }
+  ],
+  "sort": [
+    "f3dc226e37007af1befb0263c442ba58",
+    "02d97d7a36fc9b766336f3218fc93882"
+  ],
+  "title": "Prática-04",
+  "foldername": "Prática-04",
+  "schfilename": "Prática-04.json",
+  "schfilemtime": 1599714979891
+}

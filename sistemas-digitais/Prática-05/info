@@ -1,0 +1,1444 @@
+{
+  "uuid": "8394f66b47a9a36a074efef086bde60a",
+  "path": "Offline/Pr%C3%A1tica-05",
+  "name": "Prática-05",
+  "content": "",
+  "created_at": "2020-09-22 19:17:19",
+  "updated_at": "2020-09-23 00:02:15",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "664bfa8fcb11f2beea5c31a9cd9e4dc1",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "294b5a537fae4e9a9fe9e974f85d412d": 2,
+        "574bf25f763142d1b201011589f1bdfc": 8,
+        "a5cb8fc803084158bb825edf2c7447ef": 22,
+        "9c943a08418e4ab190cd400b3752673c": 18,
+        "4561d6eed2a8440baa289dc07405b4f1": 30,
+        "b0437e4706a4496f8df1c5bcf1ff1fca": 12
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "AND2EE",
+          18,
+          "",
+          "U15,U15,CA',CB'A,CB',C'B,BA',BA,CA,U17,U17,CA',CB'A,CB',C'B,CA,BA,BA'",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          2,
+          "",
+          "U1,U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          8,
+          "",
+          "S1,S3,S4,S2,S2,S1,S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          30,
+          "",
+          "U13,U2,U5,U12,U11,U9,U10,D+CB',U11,U12,D+CB',U13,U14,U10,U9,U7,BA'+C'A',U8,U3,U6,U8,U14,BA'+C'A',U6,U7,U5,U4,U4,U3,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          8,
+          "AXIAL-0.3",
+          "R10,R11,R11,R10,R9,R8,R9,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          14,
+          "AXIAL-0.3",
+          "R15,R17,R18,R12,R14,R13,R18,R13,R17,R16,R15,R16,R14,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          12,
+          "",
+          "C'2,A',B'2,B',C',A'3,B',A'3,C'2,C',B'2,A'",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          7,
+          "",
+          "3,BA,CA,7,4,1,5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S1,S4,S3,S2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          15,
+          "",
+          "U13,U14,U12,U11,U99,U10,2,U2,U3,U4,U9,U8,U7,U6,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R14,R18,R17,R16,R15,R13,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "NOT2,NOT5,NOT1,6,NOT4,NOT3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          18,
+          "",
+          "U15,U15,U86,U89,U90,U88,U92,BA,CA,U17,U17,U86,U89,U90,U88,CA,BA,U92",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          2,
+          "",
+          "U1,U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          8,
+          "",
+          "S1,S3,S4,S2,S2,S1,S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          30,
+          "",
+          "U13,U2,U5,U12,U11,U9,U10,U87,U11,U12,U87,U13,U14,U10,U9,U7,U91,U8,U3,U6,U8,U14,U91,U6,U7,U5,U4,U4,U3,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          8,
+          "AXIAL-0.3",
+          "R10,R11,R11,R10,R9,R8,R9,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          14,
+          "AXIAL-0.3",
+          "R15,R17,R18,R12,R14,R13,R18,R13,R17,R16,R15,R16,R14,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          12,
+          "",
+          "U97,U94,U96,U95,U93,U98,U95,U98,U97,U93,U96,U94",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          9,
+          "",
+          "U15,U17,U86,U89,U90,U88,U92,BA,CA",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S1,S3,S2,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          15,
+          "",
+          "U91,U12,U11,U2,U3,U4,U5,U7,U14,U6,U8,U87,U10,U9,U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R11,R8,R10,R9",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R14,R15,R12,R18,R17,R16,R13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "U95,U98,U97,U93,U96,U94",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ]
+      ],
+      "updateTime": 1600827888,
+      "createTime": 1600823995,
+      "histories": [],
+      "created_at": "2020-09-22 22:19:55",
+      "updated_at": "2020-09-22 23:24:48"
+    },
+    {
+      "uuid": "9185eb12402e4433be0ad3eb5a10bb02",
+      "title": "Sheet_1_SIM",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "294b5a537fae4e9a9fe9e974f85d412d": 1,
+        "574bf25f763142d1b201011589f1bdfc": 4,
+        "a5cb8fc803084158bb825edf2c7447ef": 11,
+        "9c943a08418e4ab190cd400b3752673c": 7,
+        "b0437e4706a4496f8df1c5bcf1ff1fca": 6,
+        "4561d6eed2a8440baa289dc07405b4f1": 15
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "AND2EE",
+          7,
+          "",
+          "CB',BA,CA,CA',CB'A,BA',C'B",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S1,S4,S3,S2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          15,
+          "",
+          "U13,U14,U12,U11,D+CB',U10,BA'+C'A',U2,U3,U4,U9,U8,U7,U6,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R14,R18,R17,R16,R15,R13,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "(BA)',A',(CA)',(BA)'2,B',C'",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          7,
+          "",
+          "3,BA,CA,7,4,1,5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S1,S4,S3,S2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          15,
+          "",
+          "U13,U14,U12,U11,U99,U10,2,U2,U3,U4,U9,U8,U7,U6,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R14,R18,R17,R16,R15,R13,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "NOT2,NOT5,NOT1,6,NOT4,NOT3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ]
+      ],
+      "updateTime": 1600825198,
+      "createTime": 1600824109,
+      "histories": [],
+      "created_at": "2020-09-22 22:21:49",
+      "updated_at": "2020-09-22 22:39:58"
+    },
+    {
+      "uuid": "485f5d3aaad76c94cb15c14a7a367e6b",
+      "title": "Sheet_2_SIM",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "294b5a537fae4e9a9fe9e974f85d412d": 2,
+        "574bf25f763142d1b201011589f1bdfc": 8,
+        "a5cb8fc803084158bb825edf2c7447ef": 22,
+        "9c943a08418e4ab190cd400b3752673c": 18,
+        "4561d6eed2a8440baa289dc07405b4f1": 30,
+        "b0437e4706a4496f8df1c5bcf1ff1fca": 12
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "AND2EE",
+          18,
+          "",
+          "U15,U15,CA',CB'A,CB',C'B,BA',BA,CA,U17,U17,CA',CB'A,CB',C'B,CA,BA,BA'",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          2,
+          "",
+          "U1,U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          8,
+          "",
+          "S1,S3,S4,S2,S2,S1,S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          30,
+          "",
+          "U13,U2,U5,U12,U11,U9,U10,D+CB',U11,U12,D+CB',U13,U14,U10,U9,U7,BA'+C'A',U8,U3,U6,U8,U14,BA'+C'A',U6,U7,U5,U4,U4,U3,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          8,
+          "AXIAL-0.3",
+          "R10,R11,R11,R10,R9,R8,R9,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          14,
+          "AXIAL-0.3",
+          "R15,R17,R18,R12,R14,R13,R18,R13,R17,R16,R15,R16,R14,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          12,
+          "",
+          "C'2,A',B'2,B',C',A'3,B',A'3,C'2,C',B'2,A'",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          7,
+          "",
+          "3,BA,CA,7,4,1,5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S1,S4,S3,S2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          15,
+          "",
+          "U13,U14,U12,U11,U99,U10,2,U2,U3,U4,U9,U8,U7,U6,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R14,R18,R17,R16,R15,R13,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "NOT2,NOT5,NOT1,6,NOT4,NOT3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          18,
+          "",
+          "U15,U15,U86,U89,U90,U88,U92,BA,CA,U17,U17,U86,U89,U90,U88,CA,BA,U92",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          2,
+          "",
+          "U1,U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          8,
+          "",
+          "S1,S3,S4,S2,S2,S1,S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          30,
+          "",
+          "U13,U2,U5,U12,U11,U9,U10,U87,U11,U12,U87,U13,U14,U10,U9,U7,U91,U8,U3,U6,U8,U14,U91,U6,U7,U5,U4,U4,U3,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          8,
+          "AXIAL-0.3",
+          "R10,R11,R11,R10,R9,R8,R9,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          14,
+          "AXIAL-0.3",
+          "R15,R17,R18,R12,R14,R13,R18,R13,R17,R16,R15,R16,R14,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          12,
+          "",
+          "U97,U94,U96,U95,U93,U98,U95,U98,U97,U93,U96,U94",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          9,
+          "",
+          "U15,U17,U86,U89,U90,U88,U92,BA,CA",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S1,S3,S2,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          15,
+          "",
+          "U91,U12,U11,U2,U3,U4,U5,U7,U14,U6,U8,U87,U10,U9,U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R11,R8,R10,R9",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R14,R15,R12,R18,R17,R16,R13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "U95,U98,U97,U93,U96,U94",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ]
+      ],
+      "updateTime": 1600827888,
+      "createTime": 1600825774,
+      "histories": [],
+      "created_at": "2020-09-22 22:49:34",
+      "updated_at": "2020-09-22 23:24:48"
+    },
+    {
+      "uuid": "f9028c2731ae93be9bf0eb62a24e6797",
+      "title": "Sheet_3_SIM",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "294b5a537fae4e9a9fe9e974f85d412d": 1,
+        "574bf25f763142d1b201011589f1bdfc": 4,
+        "a5cb8fc803084158bb825edf2c7447ef": 11,
+        "9c943a08418e4ab190cd400b3752673c": 9,
+        "b0437e4706a4496f8df1c5bcf1ff1fca": 6,
+        "4561d6eed2a8440baa289dc07405b4f1": 10,
+        "0a2c869b4fd147a9adf2fa0302f5f223": 1,
+        "66e4bb2486bd40b9827bcf8da1731185": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "AND2EE",
+          18,
+          "",
+          "U15,U15,CA',CB'A,CB',C'B,BA',BA,CA,U17,U17,CA',CB'A,CB',C'B,CA,BA,BA'",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          2,
+          "",
+          "U1,U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          8,
+          "",
+          "S1,S3,S4,S2,S2,S1,S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          30,
+          "",
+          "U13,U2,U5,U12,U11,U9,U10,D+CB',U11,U12,D+CB',U13,U14,U10,U9,U7,BA'+C'A',U8,U3,U6,U8,U14,BA'+C'A',U6,U7,U5,U4,U4,U3,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          8,
+          "AXIAL-0.3",
+          "R10,R11,R11,R10,R9,R8,R9,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          14,
+          "AXIAL-0.3",
+          "R15,R17,R18,R12,R14,R13,R18,R13,R17,R16,R15,R16,R14,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          12,
+          "",
+          "C'2,A',B'2,B',C',A'3,B',A'3,C'2,C',B'2,A'",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          7,
+          "",
+          "3,BA,CA,7,4,1,5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S1,S4,S3,S2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          15,
+          "",
+          "U13,U14,U12,U11,U99,U10,2,U2,U3,U4,U9,U8,U7,U6,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R14,R18,R17,R16,R15,R13,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R8,R9,R10,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "NOT2,NOT5,NOT1,6,NOT4,NOT3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "AND2EE",
+          18,
+          "",
+          "U15,U15,U86,U89,U90,U88,U92,BA,CA,U17,U17,U86,U89,U90,U88,CA,BA,U92",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "Seven_Segment",
+          2,
+          "",
+          "U1,U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          8,
+          "",
+          "S1,S3,S4,S2,S2,S1,S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          30,
+          "",
+          "U13,U2,U5,U12,U11,U9,U10,U87,U11,U12,U87,U13,U14,U10,U9,U7,U91,U8,U3,U6,U8,U14,U91,U6,U7,U5,U4,U4,U3,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          8,
+          "AXIAL-0.3",
+          "R10,R11,R11,R10,R9,R8,R9,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          14,
+          "AXIAL-0.3",
+          "R15,R17,R18,R12,R14,R13,R18,R13,R17,R16,R15,R16,R14,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          12,
+          "",
+          "U97,U94,U96,U95,U93,U98,U95,U98,U97,U93,U96,U94",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "OR4EE",
+          1,
+          "",
+          "U16",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "0a2c869b4fd147a9adf2fa0302f5f223"
+          }
+        ],
+        [
+          "AND2EE",
+          9,
+          "",
+          "U89,U15,U17,U86,CA,U90,U88,U92,BA",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "OR3EE",
+          1,
+          "",
+          "U18",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "66e4bb2486bd40b9827bcf8da1731185"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S4,S2,S3,S1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "OR2EE",
+          10,
+          "",
+          "U9,U91,U6,U8,U10,U87,U11,U12,U13,U14",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R9,R8,R11,R10",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R16,R17,R18,R14,R13,R15,R12",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          6,
+          "",
+          "U97,U98,U96,U94,U93,U95",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ]
+      ],
+      "updateTime": 1600829670,
+      "createTime": 1600827885,
+      "histories": [],
+      "created_at": "2020-09-22 23:24:45",
+      "updated_at": "2020-09-22 23:54:30"
+    }
+  ],
+  "sort": [
+    "664bfa8fcb11f2beea5c31a9cd9e4dc1",
+    "9185eb12402e4433be0ad3eb5a10bb02",
+    "485f5d3aaad76c94cb15c14a7a367e6b",
+    "f9028c2731ae93be9bf0eb62a24e6797",
+    "63ff1c04d7136b27c8319d6389fd78d9"
+  ],
+  "title": "Prática-05",
+  "foldername": "Prática-05",
+  "schfilename": "Prática-05.json",
+  "schfilemtime": 1600830054688
+}

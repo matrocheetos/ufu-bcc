@@ -1,0 +1,110 @@
+{
+  "uuid": "3192139f8baf9c9f27102d1d6cfd8e51",
+  "path": "Offline/Prova-02-Pr%C3%A1tica",
+  "name": "Prova-02-Prática",
+  "content": "",
+  "created_at": "2020-12-02 17:49:20",
+  "updated_at": "2020-12-02 18:16:19",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "ea7a9c96c2ceb1d9734a8f36f2425744",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "926b839b59cf464cbad3a51b90a220d1": 3,
+        "933f2b76e66f450d8623137d653fcb7c": 1,
+        "4561d6eed2a8440baa289dc07405b4f1": 1,
+        "9c943a08418e4ab190cd400b3752673c": 3,
+        "a80b164e55b5498f94d4d62d2052ea1c": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "AND2EE",
+          3,
+          "",
+          "U6,U7,U8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "JKFFEE",
+          3,
+          "",
+          "U1,U2,U3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "926b839b59cf464cbad3a51b90a220d1"
+          }
+        ],
+        [
+          "1",
+          1,
+          "",
+          "U4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "933f2b76e66f450d8623137d653fcb7c"
+          }
+        ],
+        [
+          "OR2EE",
+          1,
+          "",
+          "U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "XOR2EE",
+          1,
+          "",
+          "U9",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "a80b164e55b5498f94d4d62d2052ea1c"
+          }
+        ]
+      ],
+      "updateTime": 1606940179,
+      "createTime": 1606940179,
+      "histories": [],
+      "created_at": "2020-12-02 18:16:19",
+      "updated_at": "2020-12-02 18:16:19"
+    }
+  ],
+  "sort": [],
+  "title": "Prova-02-Prática",
+  "foldername": "Prova-02-Prática",
+  "schfilename": "Prova-02-Prática.json",
+  "schfilemtime": 1606940179318
+}

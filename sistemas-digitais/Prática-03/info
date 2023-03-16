@@ -1,0 +1,175 @@
+{
+  "uuid": "f79f098ba179f21ba6cd9b3aa759c50d",
+  "path": "Offline/Pr%C3%A1tica-03",
+  "name": "Prática-03",
+  "content": "",
+  "created_at": "2020-09-02 17:15:26",
+  "updated_at": "2020-09-08 14:01:39",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "3eee42512ae6b5de682e6b31e4b58985",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "fa59cb9d79b34376a26d981d3dc3eaab": 1,
+        "4be50b92e47b4f88a54e127c17ce78cb": 1,
+        "a5cb8fc803084158bb825edf2c7447ef": 6,
+        "3d12f6be953b41c7bef8a79039d20691": 1,
+        "bbc6d23bc21345548ab57879ce9bf832": 2,
+        "fe71c5a46dc042f3a5f29d1f6880e055": 2,
+        "13fbe66358ac415f8f844f8a7a60755f": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "555_BJT_EE",
+          1,
+          "DIP8",
+          "U3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5e42433a6d6d42ee9fe7b6234c15a35a",
+            "uuid": "3d12f6be953b41c7bef8a79039d20691"
+          }
+        ],
+        [
+          "0,01u",
+          1,
+          "RAD-0.1",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "d8f3b09873bf4bf89243089a133a0e9f",
+            "uuid": "4be50b92e47b4f88a54e127c17ce78cb"
+          }
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "56K",
+          1,
+          "AXIAL-0.3",
+          "R6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "10K",
+          2,
+          "AXIAL-0.3",
+          "R5,R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          1,
+          "AXIAL-0.3",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "330",
+          2,
+          "AXIAL-0.3",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "DLEDR",
+          2,
+          "LED3MM",
+          "D2,D1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "97ce2590a227457c91ada573d82c648e",
+            "uuid": "bbc6d23bc21345548ab57879ce9bf832"
+          }
+        ],
+        [
+          "1u",
+          1,
+          "CAP-D3.0XF1.5",
+          "C2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "912a75eb908e48e1ac6280fbf7d4259c",
+            "uuid": "fa59cb9d79b34376a26d981d3dc3eaab"
+          }
+        ],
+        [
+          "NAND2EE",
+          2,
+          "",
+          "U4,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "fe71c5a46dc042f3a5f29d1f6880e055"
+          }
+        ]
+      ],
+      "updateTime": 1599584499,
+      "createTime": 1599077744,
+      "histories": [],
+      "created_at": "2020-09-02 17:15:44",
+      "updated_at": "2020-09-08 14:01:39"
+    }
+  ],
+  "sort": [],
+  "title": "Prática-03",
+  "foldername": "Prática-03",
+  "schfilename": "Prática-03.json",
+  "schfilemtime": 1599584499586
+}

@@ -1,0 +1,120 @@
+{
+  "uuid": "1ac16bc33617231ec6016b5055fbca7d",
+  "path": "Offline/Pr%C3%A1tica-01",
+  "name": "Prática-01",
+  "content": "",
+  "created_at": "2020-08-23 18:55:20",
+  "updated_at": "2020-08-25 14:10:56",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "308d3538f1815bdbd5c27c1c03864b25",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "567d02dcf7a14380a3db283a3c68d178": 1,
+        "a5cb8fc803084158bb825edf2c7447ef": 4,
+        "bbc6d23bc21345548ab57879ce9bf832": 2,
+        "b0437e4706a4496f8df1c5bcf1ff1fca": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "PULSE(0 5 1m 0.2m 0.2m 1m 3m)",
+          1,
+          "HDR1X2",
+          "V1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "567d02dcf7a14380a3db283a3c68d178"
+          }
+        ],
+        [
+          "1K",
+          1,
+          "AXIAL-0.3",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "10K",
+          1,
+          "AXIAL-0.3",
+          "R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "560",
+          2,
+          "AXIAL-0.3",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          2,
+          "",
+          "U1,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ],
+        [
+          "DLEDR",
+          2,
+          "LED3MM",
+          "D1,D2",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "97ce2590a227457c91ada573d82c648e",
+            "uuid": "bbc6d23bc21345548ab57879ce9bf832"
+          }
+        ]
+      ],
+      "updateTime": 1598375456,
+      "createTime": 1598220625,
+      "histories": [],
+      "created_at": "2020-08-23 19:10:25",
+      "updated_at": "2020-08-25 14:10:56"
+    }
+  ],
+  "sort": [],
+  "title": "Prática-01",
+  "foldername": "Prática-01",
+  "schfilename": "Prática-01.json",
+  "schfilemtime": 1598375456578
+}

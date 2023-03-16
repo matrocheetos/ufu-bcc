@@ -1,0 +1,141 @@
+{
+  "uuid": "bd76fc67c84f5a98c0f4075d44924e27",
+  "path": "Offline/Pr%C3%A1tica-08",
+  "name": "Prática-08",
+  "content": "",
+  "created_at": "2020-10-21 09:45:28",
+  "updated_at": "2020-12-01 17:11:32",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "068dca42e73d653233838c2943c94940",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "933f2b76e66f450d8623137d653fcb7c": 1,
+        "b0437e4706a4496f8df1c5bcf1ff1fca": 3,
+        "574bf25f763142d1b201011589f1bdfc": 3,
+        "0a2c869b4fd147a9adf2fa0302f5f223": 2,
+        "4561d6eed2a8440baa289dc07405b4f1": 1,
+        "9c7a1acba77e4db2b6b3ae91a19f3c7f": 8,
+        "a5cb8fc803084158bb825edf2c7447ef": 3
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "OR4EE",
+          2,
+          "",
+          "U11,U10",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "0a2c869b4fd147a9adf2fa0302f5f223"
+          }
+        ],
+        [
+          "AND4EE",
+          8,
+          "",
+          "U2,U6,U7,U4,U1,U8,U3,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c7a1acba77e4db2b6b3ae91a19f3c7f"
+          }
+        ],
+        [
+          "SPST_Open",
+          3,
+          "",
+          "S01,S02,S03",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "1",
+          1,
+          "",
+          "U15",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "933f2b76e66f450d8623137d653fcb7c"
+          }
+        ],
+        [
+          "OR2EE",
+          1,
+          "",
+          "U9",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "1K",
+          3,
+          "AXIAL-0.3",
+          "R1,R2,R3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          3,
+          "",
+          "U14,U12,U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ]
+      ],
+      "updateTime": 1603285942,
+      "createTime": 1603285755,
+      "histories": [],
+      "created_at": "2020-10-21 10:09:15",
+      "updated_at": "2020-10-21 10:12:22"
+    }
+  ],
+  "sort": [
+    "068dca42e73d653233838c2943c94940",
+    "22aabe0aa219cd51defd5d5e8cc19c0e"
+  ],
+  "title": "Prática-08",
+  "foldername": "Prática-08",
+  "schfilename": "Prática-08.json",
+  "schfilemtime": 1606849831082
+}

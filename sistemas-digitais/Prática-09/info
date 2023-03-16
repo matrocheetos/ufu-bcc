@@ -1,0 +1,82 @@
+{
+  "uuid": "a7b85d15481cac1628f4a5fa045b4b2e",
+  "path": "Offline/Pr%C3%A1tica-09",
+  "name": "Prática-09",
+  "content": "",
+  "created_at": "2020-10-27 09:37:56",
+  "updated_at": "2020-10-27 10:37:25",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "b8ca7c48dc574016fa3ce81245d3471e",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "b241b18179404222a56960fdc96f558c": 1,
+        "567d02dcf7a14380a3db283a3c68d178": 1,
+        "a5cb8fc803084158bb825edf2c7447ef": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "PULSE(0 5 499m 1m 1m 499m 1)",
+          1,
+          "HDR1X2",
+          "V1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "567d02dcf7a14380a3db283a3c68d178"
+          }
+        ],
+        [
+          "1K",
+          1,
+          "AXIAL-0.3",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "DFFEE",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b241b18179404222a56960fdc96f558c"
+          }
+        ]
+      ],
+      "updateTime": 1603805845,
+      "createTime": 1603804056,
+      "histories": [],
+      "created_at": "2020-10-27 10:07:36",
+      "updated_at": "2020-10-27 10:37:25"
+    }
+  ],
+  "sort": [],
+  "title": "Prática-09",
+  "foldername": "Prática-09",
+  "schfilename": "Prática-09.json",
+  "schfilemtime": 1603805845810
+}

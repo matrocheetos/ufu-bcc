@@ -1,0 +1,149 @@
+{
+  "uuid": "231ff5069be1ee87af973f4361816b47",
+  "path": "Offline/Pr%C3%A1tica-10",
+  "name": "Prática-10",
+  "content": "",
+  "created_at": "2020-11-04 10:00:36",
+  "updated_at": "2020-11-04 12:46:28",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "b85babc77c3bb19d4ef3fb4437b05a40",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "b241b18179404222a56960fdc96f558c": 2,
+        "574bf25f763142d1b201011589f1bdfc": 1,
+        "a5cb8fc803084158bb825edf2c7447ef": 3,
+        "4be50b92e47b4f88a54e127c17ce78cb": 2,
+        "3d12f6be953b41c7bef8a79039d20691": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "555_BJT_EE",
+          1,
+          "DIP8",
+          "U3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5e42433a6d6d42ee9fe7b6234c15a35a",
+            "uuid": "3d12f6be953b41c7bef8a79039d20691"
+          }
+        ],
+        [
+          "0,01u",
+          1,
+          "RAD-0.1",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "d8f3b09873bf4bf89243089a133a0e9f",
+            "uuid": "4be50b92e47b4f88a54e127c17ce78cb"
+          }
+        ],
+        [
+          "0,02u",
+          1,
+          "RAD-0.1",
+          "C2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "d8f3b09873bf4bf89243089a133a0e9f",
+            "uuid": "4be50b92e47b4f88a54e127c17ce78cb"
+          }
+        ],
+        [
+          "SPST_Open",
+          1,
+          "",
+          "S1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "10K",
+          1,
+          "AXIAL-0.3",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "56K",
+          1,
+          "AXIAL-0.3",
+          "R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          1,
+          "AXIAL-0.3",
+          "R3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "DFFEE",
+          2,
+          "",
+          "U1,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b241b18179404222a56960fdc96f558c"
+          }
+        ]
+      ],
+      "updateTime": 1604501188,
+      "createTime": 1604500660,
+      "histories": [],
+      "created_at": "2020-11-04 12:37:40",
+      "updated_at": "2020-11-04 12:46:28"
+    }
+  ],
+  "sort": [],
+  "title": "Prática-10",
+  "foldername": "Prática-10",
+  "schfilename": "Prática-10.json",
+  "schfilemtime": 1604501188788
+}

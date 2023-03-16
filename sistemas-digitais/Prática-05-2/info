@@ -1,0 +1,179 @@
+{
+  "uuid": "ed617991d3b13b291d9a6c0139852569",
+  "path": "Offline/Pr%C3%A1tica-05-2",
+  "name": "Prática-05-2",
+  "content": "",
+  "created_at": "2020-09-23 00:01:34",
+  "updated_at": "2020-09-23 00:44:51",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "3df21b2c48593864e657988346e8e62e",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "294b5a537fae4e9a9fe9e974f85d412d": 1,
+        "574bf25f763142d1b201011589f1bdfc": 4,
+        "a5cb8fc803084158bb825edf2c7447ef": 11,
+        "b0437e4706a4496f8df1c5bcf1ff1fca": 3,
+        "9c943a08418e4ab190cd400b3752673c": 13,
+        "0a2c869b4fd147a9adf2fa0302f5f223": 4,
+        "66e4bb2486bd40b9827bcf8da1731185": 2,
+        "2806e53768824650a17efee480d91918": 1,
+        "4561d6eed2a8440baa289dc07405b4f1": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "OR4EE",
+          4,
+          "",
+          "U18,U17,U11,U4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "0a2c869b4fd147a9adf2fa0302f5f223"
+          }
+        ],
+        [
+          "AND2EE",
+          13,
+          "",
+          "U5,U21,U19,U25,U24,U15,U14,U12,U23,U9,U6,U22,U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "OR3EE",
+          2,
+          "",
+          "U10,U7",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "66e4bb2486bd40b9827bcf8da1731185"
+          }
+        ],
+        [
+          "Seven_Segment",
+          1,
+          "",
+          "U20",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "294b5a537fae4e9a9fe9e974f85d412d"
+          }
+        ],
+        [
+          "SPST_Open",
+          4,
+          "",
+          "S8,S7,S6,S5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "AND3EE",
+          1,
+          "",
+          "U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "2806e53768824650a17efee480d91918"
+          }
+        ],
+        [
+          "OR2EE",
+          1,
+          "",
+          "U16",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ],
+        [
+          "330",
+          7,
+          "AXIAL-0.3",
+          "R4,R5,R1,R3,R7,R6,R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "AXIAL-0.3",
+          "R19,R20,R21,R22",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "INVEE",
+          3,
+          "",
+          "U3,U8,U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "b0437e4706a4496f8df1c5bcf1ff1fca"
+          }
+        ]
+      ],
+      "updateTime": 1600832691,
+      "createTime": 1600830125,
+      "histories": [],
+      "created_at": "2020-09-23 00:02:05",
+      "updated_at": "2020-09-23 00:44:51"
+    }
+  ],
+  "sort": [],
+  "title": "Prática-05-2",
+  "foldername": "Prática-05-2",
+  "schfilename": "Prática-05-2.json",
+  "schfilemtime": 1600832691048
+}

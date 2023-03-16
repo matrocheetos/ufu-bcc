@@ -1,0 +1,68 @@
+{
+  "uuid": "f790ccd55ddac24b0cbffce62606950c",
+  "path": "Offline/Pr%C3%A1tica-00",
+  "name": "Prática-00",
+  "content": "",
+  "created_at": "2020-08-14 10:43:41",
+  "updated_at": "2020-08-14 11:21:05",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "e15d1802fca813e5893ac18831153c1b",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "a5cb8fc803084158bb825edf2c7447ef": 2,
+        "13fbe66358ac415f8f844f8a7a60755f": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "5",
+          1,
+          "HDR1X2",
+          "V1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "05ca98c924be4d7f9936cfbc00888d3a",
+            "uuid": "13fbe66358ac415f8f844f8a7a60755f"
+          }
+        ],
+        [
+          "330",
+          2,
+          "AXIAL-0.3",
+          "R1,R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ]
+      ],
+      "updateTime": 1597414865,
+      "createTime": 1597412822,
+      "histories": [],
+      "created_at": "2020-08-14 10:47:02",
+      "updated_at": "2020-08-14 11:21:05"
+    }
+  ],
+  "sort": [],
+  "title": "Prática-00",
+  "foldername": "Prática-00",
+  "schfilename": "Prática-00.json",
+  "schfilemtime": 1597414865059
+}

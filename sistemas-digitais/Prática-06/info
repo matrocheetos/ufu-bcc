@@ -1,0 +1,296 @@
+{
+  "uuid": "1186cb9f28f0499b0cb49a53e8fed96e",
+  "path": "Offline/Pr%C3%A1tica-06",
+  "name": "Prática-06",
+  "content": "",
+  "created_at": "2020-09-28 17:08:30",
+  "updated_at": "2020-09-30 01:00:49",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "8d7167b51fb9a2ce3b8c47d55777d9a0",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "574bf25f763142d1b201011589f1bdfc": 2,
+        "933f2b76e66f450d8623137d653fcb7c": 1,
+        "fe71c5a46dc042f3a5f29d1f6880e055": 4,
+        "a5cb8fc803084158bb825edf2c7447ef": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "SPST_Open",
+          2,
+          "",
+          "S1,S2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "1",
+          1,
+          "",
+          "U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "933f2b76e66f450d8623137d653fcb7c"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "AXIAL-0.3",
+          "R1,R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "NAND2EE",
+          4,
+          "",
+          "U12,U13,U23,U24",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "fe71c5a46dc042f3a5f29d1f6880e055"
+          }
+        ],
+        [
+          "AND2EE",
+          2,
+          "",
+          "U18,U21",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "SPST_Open",
+          2,
+          "",
+          "S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "1",
+          1,
+          "",
+          "U14",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "933f2b76e66f450d8623137d653fcb7c"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "AXIAL-0.3",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ]
+      ],
+      "updateTime": 1601438449,
+      "createTime": 1601328793,
+      "histories": [],
+      "created_at": "2020-09-28 18:33:13",
+      "updated_at": "2020-09-30 01:00:49"
+    },
+    {
+      "uuid": "9150b9a294a8b28504bc8d4e116df5fb",
+      "title": "Sheet_2",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "933f2b76e66f450d8623137d653fcb7c": 1,
+        "574bf25f763142d1b201011589f1bdfc": 2,
+        "a5cb8fc803084158bb825edf2c7447ef": 2,
+        "9c943a08418e4ab190cd400b3752673c": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "NAND3EE",
+          2,
+          "",
+          "U4,U5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "433eb1bf95ce4551906ecc4f5d09ab78"
+          }
+        ],
+        [
+          "SPST_Open",
+          2,
+          "",
+          "S1,S2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "1",
+          1,
+          "",
+          "U2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "933f2b76e66f450d8623137d653fcb7c"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "AXIAL-0.3",
+          "R1,R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ],
+        [
+          "NAND2EE",
+          11,
+          "",
+          "U11,U12,U27,U1,U3,U22,U23,U24,U25,U26,U13",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "fe71c5a46dc042f3a5f29d1f6880e055"
+          }
+        ],
+        [
+          "AND2EE",
+          2,
+          "",
+          "U18,U21",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "SPST_Open",
+          2,
+          "",
+          "S3,S4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "574bf25f763142d1b201011589f1bdfc"
+          }
+        ],
+        [
+          "1",
+          1,
+          "",
+          "U14",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "933f2b76e66f450d8623137d653fcb7c"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "AXIAL-0.3",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b9efc06d0fb742f99a478d48de211eb9",
+            "uuid": "a5cb8fc803084158bb825edf2c7447ef"
+          }
+        ]
+      ],
+      "updateTime": 1601437826,
+      "createTime": 1601435615,
+      "histories": [],
+      "created_at": "2020-09-30 00:13:35",
+      "updated_at": "2020-09-30 00:50:26"
+    }
+  ],
+  "sort": [
+    "8d7167b51fb9a2ce3b8c47d55777d9a0",
+    "9150b9a294a8b28504bc8d4e116df5fb"
+  ],
+  "title": "Prática-06",
+  "foldername": "Prática-06",
+  "schfilename": "Prática-06.json",
+  "schfilemtime": 1601438449054
+}

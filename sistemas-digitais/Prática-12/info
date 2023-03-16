@@ -1,0 +1,96 @@
+{
+  "uuid": "25ad5edead5eeb1731dcf38632b4dc30",
+  "path": "Offline/Pr%C3%A1tica-12",
+  "name": "Prática-12",
+  "content": "",
+  "created_at": "2020-11-18 14:21:09",
+  "updated_at": "2020-11-18 15:58:20",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "fdab28106a35a2389c26dae671521301",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "933f2b76e66f450d8623137d653fcb7c": 1,
+        "926b839b59cf464cbad3a51b90a220d1": 3,
+        "4561d6eed2a8440baa289dc07405b4f1": 3,
+        "9c943a08418e4ab190cd400b3752673c": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "AND2EE",
+          2,
+          "",
+          "U5,U6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "9c943a08418e4ab190cd400b3752673c"
+          }
+        ],
+        [
+          "JKFFEE",
+          3,
+          "",
+          "UC,UB,UA",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "YUJING",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "926b839b59cf464cbad3a51b90a220d1"
+          }
+        ],
+        [
+          "1",
+          1,
+          "",
+          "U1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "933f2b76e66f450d8623137d653fcb7c"
+          }
+        ],
+        [
+          "OR2EE",
+          3,
+          "",
+          "U2,U3,U4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "4561d6eed2a8440baa289dc07405b4f1"
+          }
+        ]
+      ],
+      "updateTime": 1605722300,
+      "createTime": 1605722025,
+      "histories": [],
+      "created_at": "2020-11-18 15:53:45",
+      "updated_at": "2020-11-18 15:58:20"
+    }
+  ],
+  "sort": [],
+  "title": "Prática-12",
+  "foldername": "Prática-12",
+  "schfilename": "Prática-12.json",
+  "schfilemtime": 1605722300356
+}
