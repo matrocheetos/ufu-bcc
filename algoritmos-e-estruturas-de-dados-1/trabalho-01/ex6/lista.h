@@ -1,0 +1,12 @@
+typedef struct no *Lista;
+Lista criaLista();
+int listaVazia(Lista li);
+int insereElem(Lista *li, int element);
+int removeElem(Lista *li, int element);
+int obtem_valor(Lista lst, int Pos);
+int tamanho(Lista li);
+int esvaziar(Lista *li);
+int removeMaior(Lista *li);
+Lista inverter(Lista lst);
+Lista multiplos3(Lista lst);
+int removeTodos(Lista *lst, int elem);

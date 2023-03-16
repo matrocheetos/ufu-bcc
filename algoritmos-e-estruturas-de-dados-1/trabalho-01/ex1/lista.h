@@ -1,0 +1,13 @@
+typedef struct lista *Lista;
+Lista cria_lista();
+int lista_vazia(Lista lst);
+int lista_cheia(Lista lst);
+int insere_elem(Lista lst, int elem);
+int remove_elem(Lista lst, int elem);
+int remove_impar(Lista p);
+void imprime_lista(Lista p);
+int concatenar(Lista lst, Lista lst2,Lista *lst3);
+int esvaziar(Lista lst);
+int tamanho(Lista p);
+int menor(Lista p);
+int inverter(Lista lst, Lista lst2);
