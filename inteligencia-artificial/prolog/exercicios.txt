@@ -1,0 +1,7 @@
+1.2, 2.2, 3.4, 4.3, 5.8 e 6.4
+
+ex1 primo() e prima() errados
+
+ex5 rota() errado
+
+ex6 errado
