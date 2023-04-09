@@ -1,0 +1,64 @@
+/* -------------------------------- */
+/* formulario */
+
+input {
+    width: fit-content;
+    margin: 10px 0 20px 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+button {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+fieldset {
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+input:invalid + span::after {
+    content: '✖';
+    color: red;
+}
+
+input:valid + span::after {
+    content: '✓';
+    color: limegreen;
+}
+
+form fieldset fieldset {
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+form fieldset fieldset legend {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form fieldset fieldset div {
+    float: inline-start;
+    padding: 0px 10px;
+}
+
+/* -------------------------------- */
