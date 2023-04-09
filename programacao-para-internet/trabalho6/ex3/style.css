@@ -1,0 +1,55 @@
+main {
+    font-family: "Helvetica Neue", Helvetica;
+    font-size: large;
+    color: black;
+
+    background-color: lightblue;
+    max-width: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 40px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 20px lightskyblue;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    width: 70%;
+    margin: 10px 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: lightcyan;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+
+    margin: 5px 0 5px 20px;
+    padding: 5px;
+}
+
+span+button {
+    background: none;
+    border: none;
+
+    margin: 0;
+    padding: 5px;
+
+    float: right;
+}

@@ -9,6 +9,7 @@ window.onload = function () {
         modal.style.display = 'none';
     });
 
+    // abre a modal
     const botaoAbre = document.getElementById("botaoAbre");
     botaoAbre.addEventListener("click", function () {
         modal.style.display = 'block';

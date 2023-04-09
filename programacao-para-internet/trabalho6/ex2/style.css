@@ -10,15 +10,58 @@
 }
 
 .modalContent {
+    font-family: "Helvetica Neue", Helvetica;
+    font-size: large;
+    color: black;
+    text-align: center;
+
     background-color: lightgreen;
+    border: 1px solid black;
     border-radius: 5px ;
+    box-shadow: 0 0 20px lightgrey;
     
     position: absolute;
-    width: 60%;
+    width: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     padding: 10px;
     margin: 5px;
+}
+
+main {
+    font-family: "Helvetica Neue", Helvetica;
+    font-size: large;
+    color: black;
+
+    background-color: lightblue;
+    max-width: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 40px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 20px lightskyblue;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+h1 {
+    margin: 0;
 }
