@@ -1,23 +1,13 @@
 window.onload = function () {
     // uso dos botões para mudar o conteúdo da página
-    const botoes = document.querySelectorAll("nav button");
+    botoes = document.querySelectorAll(".nav-item");
     for (let botao of botoes) {
         botao.addEventListener("click", mudaAba);
     }
-    abreAba(2); // abre a aba inicial
-    
-    // modal
-    const modal = document.getElementById("avisoModal");
-    const botaoFecha = modal.querySelector(".btn-close");
-    
-    // validação do formulário
-    document.forms.formCadastro.onsubmit = validaFormModal;
+    abreAba(0); // abre a aba inicial
 
-    // fecha modal
-    botaoFecha.addEventListener("click", function () {
-        modal.className = "modal fade";
-        modal.style.display = 'none';
-    });
+    // validação do formulário
+    document.forms.formCadastro.onsubmit = validaForm;
 }
 
 function mudaAba (e) {
@@ -34,38 +24,46 @@ function abreAba (i) {
     const tabActive = document.querySelector(".tabActive");
     if (tabActive !== null) { tabActive.className = ""; }
 
-    const buttonActive = document.querySelector(".buttonActive");
-    if(buttonActive !== null) { buttonActive.className = ""; }
+    const buttonActive = document.querySelector(".active");
+    if(buttonActive !== null) { buttonActive.className = "nav-link"; }
 
     // abre nova aba a partir do parâmetro 'i'
     document.querySelectorAll(".tabs section")[i].className = "tabActive";
-    document.querySelectorAll("nav button")[i].className = "buttonActive";
+    document.querySelectorAll(".nav-link")[i].className = "nav-link active";
     
     // volta para o topo da página
     window.scrollTo(0,0);
 }
 
-function validaFormModal (e) {
+function validaForm (e) {
     let form = e.target;
     let formValido = true;
-    const modal = document.getElementById("avisoModal");
+
+    // seleciona o elemento <span> após os campos
+    const spanUsr = form.usuario.nextElementSibling;
+    const spanSenha = form.usrSenha.nextElementSibling;
+    const spanEmail = form.usrEmail.nextElementSibling;
+
+    // esvazia <span>
+    spanUsr.textContent = "";
+    spanSenha.textContent = "";
+    spanEmail.textContent = "";
 
     // verifica se campos do formulário estão preenchidos
     // utiliza o <span> para mostrar mensagem de aviso
     if (form.usuario.value === "") {
+        spanUsr.textContent = "O usuário deve ser preenchido";
         formValido = false;
     }
     if (form.usrSenha.value === "") {
+        spanSenha.textContent = "A senha deve ser preenchida";
         formValido = false;
     }
     if (form.usrEmail.value === "") {
+        spanEmail.textContent = "O e-mail deve ser preenchido";
         formValido = false;
     }
 
     // impede submissão do formulário
-    if (!formValido) {
-        modal.style.display = 'block';
-        modal.className = "modal";
-        e.preventDefault();
-    }
+    if (!formValido) e.preventDefault();
 }

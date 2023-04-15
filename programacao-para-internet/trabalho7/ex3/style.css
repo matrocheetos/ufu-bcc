@@ -29,50 +29,12 @@ h2 {
 /* -------------------------------- */
 /* nav */
 
-nav {
+.navbar {
     background-color: #555;
-    text-align: center;
-    margin: 0;
-    padding: 7px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 0;
-}
-
-nav button {
-    font-family: "Helvetica Neue", Helvetica;
-    font-size: medium;
-    text-decoration: none;
+.navbar a {
     color: lightgray;
-
-    background: none;
-    border: none;
-    outline: none;
-
-    margin: 0;
-    padding: 5px;
-}
-
-nav button:hover {
-    color: white;
-    cursor: pointer;
-}
-
-button.buttonActive {
-    font-weight: bold;
-    color: white;
 }
 
 /* -------------------------------- */
@@ -152,16 +114,3 @@ form textarea {
 }
 
 /* -------------------------------- */
-/* modal */
-
-.modal {
-    background-color: #0006;
-}
-
-.modal-dialog {
-    position: absolute;
-    width: 30%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
