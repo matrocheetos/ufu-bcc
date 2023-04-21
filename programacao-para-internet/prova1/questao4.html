@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11921BCC027</title>
+
+    <style>
+        body {
+            background-color: #ddd;
+            font-family: "Helvetica Neue";
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #555;
+            margin: 20px;
+            padding: 10px 0;
+            text-align: center;
+            color: #eee;
+        }
+
+        main {
+            background-color: #eee;
+            margin: 20px;
+            padding: 0;
+            color: #555;
+        }
+
+        #container {
+            background-color: #eee;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 65%;
+
+            border: 1px solid #555;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #555;
+        }
+
+        img {
+            margin: 7px;
+            box-shadow: 5px 5px 5px #555;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 750px) {
+            #container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Clínica ABC</h1>
+        </header>
+
+        <main>
+            <h2>Nossa Estrutura</h2>
+            <div>
+                <img src="https://furtado.prof.ufu.br/site/clinica1.jpg" alt="clinica1" width="150" height="150">
+                <img src="https://furtado.prof.ufu.br/site/clinica2.jpg" alt="clinica2" width="150" height="150">
+                <img src="https://furtado.prof.ufu.br/site/clinica3.jpg" alt="clinica3" width="150" height="150">
+                <img src="https://furtado.prof.ufu.br/site/clinica4.jpg" alt="clinica4" width="150" height="150">
+                <img src="https://furtado.prof.ufu.br/site/clinica5.jpg" alt="clinica5" width="150" height="150">
+                <img src="https://furtado.prof.ufu.br/site/clinica6.jpg" alt="clinica6" width="150" height="150">
+                <img src="https://furtado.prof.ufu.br/site/clinica7.jpg" alt="clinica7" width="150" height="150">
+                <img src="https://furtado.prof.ufu.br/site/clinica8.jpg" alt="clinica8" width="150" height="150">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        window.onload = function () {
+            const imagens = document.querySelectorAll("img");
+            // adiciona box shadow...
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11921BCC027</title>
+</head>
+
+<body>
+    <main>
+        <form action="cadastraVeiculo.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <div>
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca">
+                </div>
+                <div>
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo">
+                </div>
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor" name="cor">
+                </div>
+                <div>
+                    <label for="data">Data de fabricação:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <div>
+                    <label for="tipo">Tipo:</label>
+                    <select>
+                        <option value="">-</option>
+                        <option value="automovel">Automóvel</option>
+                        <option value="caminhonete">Caminhonete</option>
+                        <option value="caminhao">Caminhão</option>
+                    </select>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Opcionais</legend>
+                        <div>
+                            <input type="checkbox" id="ar-condicionado" name="opcionais[]" value="ar-condicionado">
+                            <label for="ar-condicionado">Ar-condicionado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="central-multimidia" name="opcionais[]"
+                                value="central-multimidia">
+                            <label for="central-multimidia">Central multimídia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gps" name="opcionais[]" value="gps">
+                            <label for="gps">GPS</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" rows="3" cols="10"></textarea>
+                </div>
+                <div>
+                    <label for="foto">Foto:</label>
+                    <input id="foto" name="foto" type="file" accept="image/*">
+                </div>
+            </fieldset>
+
+            <button>Cadastrar</button>
+        </form>
+    </main>
+</body>
+
+</html>
