@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício 1</title>
     <style>
         body {
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
           line-height: 1.5rem;
-          background-image: url("images/bg2.jpg");
-          background-size: cover;
-          margin: 0;
+          margin: 10px;
         }
-    
-        main {
-          width: 60%;
-          background-color: #fff;
-          border: 0.5px solid #ccc;
-          margin: 0;
-          padding: 2% 4%;
-    
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+        a {
+          color: inherit;
+        }
+        h3 {
+          color: darkred;
         }
       </style>
 </head>
+
 <body>
-    <h1>Exemplo 1</h1>
-    <p>Um botão faz requisição AJAX para carregar conteúdo de outro arquivo "conteudoAdicional.html". O script ativado pelo botão utiliza o método "open" e faz requisição GET para obter o conteúdo do arquivo </p>
-    <h1>Exemplo 2</h1>
+  <main>
+    <h1>Exercício 1</h1>
+    <a href="index.html">Voltar</a>
+    <hr>
+
+    <h2>exemplo 1&#41;</h2>
+    <a href="Ex1-hello-ajax/">Ex1-hello-ajax</a>
+    <h3>index.html</h3>
+    <p>Possui um botão que faz requisição AJAX com XHR para carregar conteúdo de outro arquivo "conteudoAdicional.html". O script ativado pelo botão utiliza o método "open" e faz requisição GET para obter o conteúdo do arquivo. Há então o tratamento para a requisição: em caso de sucesso, "onload" insere o conteúdo; em caso de erro, "onerror" mostra mensagem de erro.</p>
+    <h3>conteudoAdicional.html</h3>
+    <p>Contém conteúdo HTML adicional para ser carregado em outra página.</p>
+    <hr>
+
+    <h2>exemplo 2&#41;</h2>
+    <a href="Ex2-busca-cidade/">Ex2-busca-cidade</a>
+    <h3>index.html</h3>
+    <p>Possui um campo para inserir um CEP. Ao digitar no campo, é realizada uma requisição XHR GET por um script PHP para busca de cidade utilizando o texto digitado.</p>
+    <h3>busca-cidade.php</h3>
+    <p>O script PHP recebe o input $cep em sua chamada e processa apenas '38400-100' ou '38700-000', retornando o nome das respectivas cidades; no caso de CEP desconhecido, retorna erro.</p>
+    <hr>
+
+    <h2>exemplo 3&#41;</h2>
+    <a href="Ex3-recebendo-json1/">Ex3-recebendo-json1</a>
+    <h3>index.html</h3>
+    <p>Possui campos para CEP, rua, bairro e cidade. É esperado que se digite um CEP e os outros campos sejam preenchidos utilizando o JSON obtido na resposta da requisição XHR GET pelo script "busca-endereco.php".</p>
+    <h3>busca-endereco.php</h3>
+    <p>Recebe um $cep e compara com entradas definidas no código. Se válido, cria um objeto tipo "Endereco" com seus respectivos dados &#40;$rua, $bairro, $cidade&#41; e os retorna codificados no formato JSON.</p>
+    <hr>
+
+    <h2>exemplo 4&#41;</h2>
+    <a href="Ex4-recebendo-json2/">Ex4-recebendo-json2</a>
+    <h3>index.html</h3>
+    <p>Similar ao exemplo 3, porém faz um tratamento diferente em relação à obtenção e processamento do JSON requisitado. Nesse caso, o JSON é convertido em objeto JavaScript pela função "JSON.parse()" ao invés de já ser obtido como resposta como no exemplo 3.</p>
+    <h3>busca-endereco.php</h3>
+    <p>Igual ao exemplo 3.</p>
+    <hr>
+
+    <h2>exemplo 5&#41;</h2>
+    <a href="Ex5-enviando-json/">Ex5-enviando-json</a>
+    <h3>index.html</h3>
+    <p>Preenche campos a partir do envio de um JSON pela requisição XHR POST, contendo o <ins>CEP</ins> digitado, o <ins>email</ins> 'fulano@mail.com' e a <ins>apikey</ins> 'abcdefg123456' convertidos para JSON a partir do objeto "objetoJS".</p>
+    <h3>busca-endereco.php</h3>
+    <p>Recebe uma string JSON e a converte em objeto PHP para processar o CEP e retornar outro JSON com os dados do endereço.</p>
+    <hr>
+
+    <h2>exemplo 6&#41;</h2>
+    <a href="Ex6-login/">Ex6-login</a>
+    <h3>index.html</h3>
+    <p>Página de login com os campos "E-mail" e "Senha". Dados são verificados por uma requisição XHR POST enviando os campos do form para o script "checkLogin.php". No caso de falha, é mostrada uma mensagem de erro, e em caso de sucesso, é carregada a página "home.html"</p>
+    <h3>checkLogin.php</h3>
+    <p>Recebe um 'email' e uma 'senha' e os valida. Em caso de sucesso, cria um objeto PHP "RequestResponse" que indica sucesso e a qual página deve ser redirecionado; em caso de falha, cria um "RequestResponse" indicando falha. O script retorna a resposta objeto "RequestResponse" convertido para formato JSON.</p>
+    <h3>home.html</h3>
+    <p>Página aberta em caso de login com sucesso, não tem funções.</p>
+  </main>
 </body>
 </html>

@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 2</title>
+    <title>Exercício 2</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.5rem;
+            margin: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid lightgray;
+        }
+    </style>
 </head>
+
 <body>
     <main>
-        <h1>a</h1>
+        <h1>Exercício 2</h1>
+        <a href="../ex1/Ex2-busca-cidade/">Ex2-busca-cidade</a>
+        <h2>questão a&#41;</h2>
+        <p>Retornou código de status 200, obteve resposta.</p>
         <img src="images/ex2a.png" alt="ex2a">
-        <h1>b</h1>
+        <h2>questão b&#41;</h2>
+        <p>Retornou código de status 404, não encontrou o CEP informado.</p>
         <img src="images/ex2b.png" alt="ex2b">
-        <h1>c</h1>
+        <h2>questão c&#41;</h2>
+        <a href="Ex2-busca-cidade-erro/">Script com erro</a>
+        <p>Retornou código de status 500, houve erro interno no servidor, não obteve resposta.</p>
         <img src="images/ex2c.png" alt="ex2c">
-        <h1>d</h1>
-        <p>Código de status 200, corpo da resposta: "Parse error: syntax error, unexpected 'echo' (T_ECHO) in /home/vol19_2/epizy.com/epiz_33715759/htdocs/XHR/Ex2-busca-cidade/Ex2-busca-cidade-erro/busca-cidade.php on line 6".</p>
-        <p>Essa configuração seria útil no cenário de debugging no desenvolvimento, porém jamais deve ser utilizada em um ambiente que pode ser acessado por qualquer usuário.</p>
+        <h2>questão d&#41;</h2>
+        <p>Retornou código de status 200, corpo da resposta: <i>"Parse error: syntax error, unexpected 'echo' (T_ECHO) in /home/vol19_2/epizy.com/epiz_33715759/htdocs/XHR/Ex2-busca-cidade/Ex2-busca-cidade-erro/busca-cidade.php on line 6"</i>.</p>
+        <p>Essa configuração seria útil no cenário de debugging na fase de desenvolvimento, porém jamais deve ser utilizada em um ambiente que pode ser acessado por qualquer usuário.</p>
     </main>
 </body>
+
 </html>
