@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cotações Alpha Vantage</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.5rem;
+      background-color: #ddd;
+      color: #555;
+      margin: 0;
+    }
+
+    main {
+      width: 80%;
+      margin: 0;
+      padding: 2% 4%;
+      background-color: #eee;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      font-size: default;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <h1>Cotações das Ações Indicadas</h1>
+    <hr>
+    <h2>ABEV3: <span id="abev3">...</span></h2>
+    <h2>ASAI3: <span id="asai3">...</span></h2>
+    <h2>AZUL4: <span id="azul4">...</span></h2>
+    <h2>B3SA3: <span id="b3sa3">...</span></h2>
+    <h2>BIDI11: <span id="bidi11">...</span></h2>
+  </main>
+  <script>
+
+    // OBS: A função não trata todos os erros
+    function GetQuote(codigoAcao) {
+      return fetch('https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${codigoAcao}.SA&apikey=L9LDQDQ4AX4242B2')
+        .then(response => response.json())
+        .then(data => data["Global Quote"]["05. price"])
+        .catch(error => console.log(error));
+    }
+
+    function GetPortfolio() {
+        Promise.all([
+            GetQuote('ABEV3'),
+            GetQuote('ASAI3'),
+            GetQuote('AZUL4'),
+            GetQuote('B3SA3'),
+            GetQuote('BIDI11')
+        ])
+        .then(cotacoes => console.log(cotacoes))
+        .catch(error => console.log(error))
+    }
+
+    window.onload = function () {
+        GetPortfolio();
+    }
+  </script>
+
+</body>
+
+</html>
