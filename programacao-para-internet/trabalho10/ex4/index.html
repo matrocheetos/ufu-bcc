@@ -29,6 +29,14 @@
       font-size: default;
       text-align: left;
     }
+
+    div {
+      margin: 10px;
+    }
+
+    label {
+      font-size: 1.5rem;
+    }
   </style>
 </head>
 
@@ -37,36 +45,112 @@
   <main>
     <h1>Cotações das Ações Indicadas</h1>
     <hr>
-    <h2>ABEV3: <span id="abev3">...</span></h2>
-    <h2>ASAI3: <span id="asai3">...</span></h2>
-    <h2>AZUL4: <span id="azul4">...</span></h2>
-    <h2>B3SA3: <span id="b3sa3">...</span></h2>
-    <h2>BIDI11: <span id="bidi11">...</span></h2>
+    <form name="formCotacoes" id="formCotacoes">
+      <div>
+        <label for="acao1">Ação: </label>
+        <input type="text" id="acao1" name="acao1">
+      </div>
+      <div>
+        <label for="acao2">Ação: </label>
+        <input type="text" id="acao2" name="acao2">
+      </div>
+      <div>
+        <label for="acao3">Ação: </label>
+        <input type="text" id="acao3" name="acao3">
+      </div>
+      <div>
+        <label for="acao4">Ação: </label>
+        <input type="text" id="acao4" name="acao4">
+      </div>
+      <div>
+        <label for="acao5">Ação: </label>
+        <input type="text" id="acao5" name="acao5">
+      </div>
+      <button id="sequencial" type="submit">Cotar Sequencialmente</button>
+      <button id="paralelo" type="submit">Cotar em Paralelo</button>
+    </form>
   </main>
   <script>
 
-    // OBS: A função não trata todos os erros
-    function GetQuote(codigoAcao) {
-      return fetch('https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${codigoAcao}.SA&apikey=L9LDQDQ4AX4242B2')
-        .then(response => response.json())
-        .then(data => data["Global Quote"]["05. price"])
-        .catch(error => console.log(error));
-    }
 
-    function GetPortfolio() {
-        Promise.all([
-            GetQuote('ABEV3'),
-            GetQuote('ASAI3'),
-            GetQuote('AZUL4'),
-            GetQuote('B3SA3'),
-            GetQuote('BIDI11')
-        ])
-        .then(cotacoes => console.log(cotacoes))
+
+    function getQuote(acao) {
+      return fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${acao}.SA&apikey=L9LDQDQ4AX4242B2`)
+        .then(response => response.json())
+        .then(data => {
+          const objeto = {
+            acao: data["Global Quote"]["01. symbol"].replace(".SA", ""),
+            cotacao: data["Global Quote"]["05. price"],
+          }
+          return objeto
+        })
         .catch(error => console.log(error))
     }
 
-    window.onload = function () {
-        GetPortfolio();
+    function renderStock(objeto, target) {
+      const divAcao = document.querySelector(`#${target}`).parentNode;
+      divAcao.innerHTML = `<h2>${objeto.acao}: ${objeto.cotacao}</h2>`;
+    }
+
+    function sequencial(acoes) {
+      getQuote(acoes[0])
+        .then((data) => {
+          renderStock(data, "acao1")
+          return getQuote(acoes[1])
+        })
+        .then((data) => {
+          renderStock(data, "acao2")
+          return getQuote(acoes[2])
+        })
+        .then((data) => {
+          renderStock(data, "acao3")
+          return getQuote(acoes[3])
+        })
+        .then((data) => {
+          renderStock(data, "acao4")
+          return getQuote(acoes[4])
+        })
+        .then((data) => {
+          renderStock(data, "acao5")
+        })
+        .catch(error => console.log(error))
+    }
+
+    function paralelo(acoes) {
+      Promise.all([
+        getQuote(acoes[0]),
+        getQuote(acoes[1]),
+        getQuote(acoes[2]),
+        getQuote(acoes[3]),
+        getQuote(acoes[4]),
+      ])
+        .then(cotacoes => {
+          cotacoes.forEach((objeto, i) => {
+            renderStock(objeto, `acao${i + 1}`)
+          })
+        })
+        .catch(error => console.log(error))
+    }
+
+    window.onload = () => {
+      document.forms.formCotacoes.onsubmit = e => {
+        e.preventDefault()
+
+        const acao1 = document.querySelector("#acao1").value;
+        const acao2 = document.querySelector("#acao2").value;
+        const acao3 = document.querySelector("#acao3").value;
+        const acao4 = document.querySelector("#acao4").value;
+        const acao5 = document.querySelector("#acao5").value;
+        const acoes = [acao1, acao2, acao3, acao4, acao5];
+
+        if (e.submitter.id === 'sequencial') {
+          sequencial(acoes);
+        } else if (e.submitter.id === 'paralelo') {
+          paralelo(acoes);
+        }
+        document.getElementById("sequencial").outerHTML = "";
+        document.getElementById("paralelo").outerHTML = "";
+      }
     }
   </script>
 

@@ -101,13 +101,13 @@
         .then(response => {
           // falha
           if (!response.ok) {
-            throw new Error("A resposta não pode ser obtida: " + response.status);
+            throw new Error("A resposta não pode ser obtida: " + response.status)
           }
           // sucesso
-          return response.json();
+          return response.json()
         })
         .then(loginResponse => {
-          if(loginResponse.success)
+          if (loginResponse.success)
             window.location = loginResponse.detail;
           else {
             document.querySelector("#loginFailMsg").style.display = 'block';
@@ -115,14 +115,13 @@
             form.senha.focus();
           }
         })
-        .catch(error => {
-          console.error("Erro de rede ou processamento - requisição não finalizada");
-        })
+        .catch(error => console.error("Erro de rede ou processamento: " + error))
     }
 
     window.onload = function () {
       const form = document.querySelector("#formLogin");
       form.onsubmit = function (e) {
+        e.preventDefault();
         sendForm(form);
       }
     }
