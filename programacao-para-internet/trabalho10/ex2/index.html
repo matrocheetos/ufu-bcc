@@ -11,6 +11,9 @@
             line-height: 1.5rem;
             margin: 10px;
         }
+        i {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -18,7 +21,11 @@
     <main>
         <h1>Exercício 2</h1>
         <a href="Ex2-encadeamento-fetch/">Ex2-encadeamento-fetch</a>
-        <p></p>
+        <p>A função <i>fetch</i> busca um recurso em "https://ipapi.co/json/".</p>
+        <p>O primeiro <i>then</i> trata o sucesso da promise e guarda a resposta em formato JSON.</p>
+        <p>O segundo <i>then</i> é executado utilizando os dados de latitude e longitude obtidos na <i>promise</i> anterior para chamar uma API de dados meteorológicos.</p>
+        <p>O terceiro <i>then</i> trata a resposta em um JSON.</p>O quarto <i>then</i> insere alguns dados desse JSON (temperatura e velocidade do vento) no HTML.
+        <p>O único <i>catch</i> será executado caso qualquer <i>promise</i> seja rejeitada ou lance exceção e apenas mostra a mensagem de erro no console.</p>
     </main>
 </body>
 
