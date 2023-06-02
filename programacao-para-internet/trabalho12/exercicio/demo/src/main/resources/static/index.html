@@ -23,7 +23,7 @@
 
     <form class="row g-3">
         <div>
-            <label for="cep" class="form-label">Informe o CEP no formato xxxxx-xxx (Ex. 38400-100)</label>
+            <label for="cep" class="form-label">Informe o CEP no formato xxxxxxxx (Ex. 38400100)</label>
             <input type="text" class="form-control" id="cep" name="cep">
         </div>
         <div>
@@ -38,56 +38,117 @@
             <label for="cidade" class="form-label">Cidade:</label>
             <input type="text" class="form-control" id="cidade" name="cidade">
         </div>
+        <div class="col-sm-12 d-grid">
+            <button type="button" id="btnCepGET" class="btn btn-primary btn-block">Buscar endereço pelo CEP (GET)</button>
+        </div>
+        <div class="col-sm-12 d-grid">
+            <button type="button" id="btnCriarPOST" class="btn btn-primary btn-block">Criar novo (POST)</button>
+        </div>
+        <div class="col-sm-12 d-grid">
+            <button type="button" id="btnCepDELETE" class="btn btn-primary btn-block">Apagar pelo CEP (DELETE)</button>
+        </div>
+        <div class="col-sm-12 d-grid">
+            <button type="button" id="btnListar" class="btn btn-primary btn-block">Listar todos endereços</button>
+        </div>
     </form>
 
 </div>
 
 <script>
 
-    function buscaEndereco(cep) {
-
-        if (cep.length != 9) return;
+    async function buscaEndereco(cep) {
+        if (cep.length != 8) return;
         let form = document.querySelector("form");
 
-        fetch("/address/" + cep)
-            .then(response => {
-                if (!response.ok) {
-                    // A requisição finalizou com sucesso a nível de rede,
-                    // porém o servidor retornou um código de status
-                    // fora da faixa 200-299 (indicando outros possíveis erros).
-                    // Neste caso, lança uma exceção para que a promise seja
-                    // rejeitada. Como o próximo 'then' não possui callback
-                    // de erros, será executada a função do próximo 'catch'.
-                    throw new Error(response.status);
-                    // return Promise.reject(response.status); // outra opção
-                }
+        try {
+            const response = await fetch("address/"+cep);
+            if (!response.ok)
+                throw new Error("Erro: "+response.status);
 
-                // Requisição finalizada com sucesso e o servidor
-                // retornou um código de status de sucesso (200-299).
-                // O método json() faz a leitura dos dados de forma
-                // assíncrona e converte para um objeto JS. Qdo essa
-                // operação finalizar com sucesso, a função de callback
-                // do próximo then receberá o resultado e será executada.
-                return response.json(); // Atenção para o 'return' aqui
-            })
-            .then(endereco => {
-                // utiliza os dados para preencher o formulário
-                form.rua.value = endereco.rua;
-                form.bairro.value = endereco.bairro;
-                form.cidade.value = endereco.cidade;
-            })
-            .catch(error => {
-                // Ocorreu um erro na comunicação com o servidor ou
-                // no processamento da requisição no PHP, que pode não
-                // ter retornado uma string JSON válida.
-                form.reset();
-                console.error('Falha inesperada: ' + error);
-            });
+            const endereco = await response.json();
+            form.rua.value = endereco.rua;
+            form.bairro.value = endereco.bairro;
+            form.cidade.value = endereco.cidade;
+            console.log(endereco)
+        }
+        catch (e) {
+            console.error(e);
+        }
+
+    }
+
+    async function criaEndereco() {
+        let form = document.querySelector("form");
+
+        let endereco = {
+            cep: form.cep.value,
+            rua: form.rua.value,
+            bairro: form.bairro.value,
+            cidade: form.cidade.value
+        };
+
+        const options = {
+            method: "POST",
+            body: JSON.stringify(endereco),
+            headers: { 'Content-Type': 'application/json' }
+        }
+
+        try {
+            const response = await fetch("address", options);
+            if (!response.ok)
+                throw new Error("Erro: "+response.status);
+        }
+        catch (e) {
+            console.error(e);
+        }
+    }
+
+    async function deletaEndereco(cep) {
+        const options = {
+            method: "DELETE"
+        }
+        try {
+            const response = await fetch("address/"+cep, options)
+            if (!response.ok)
+                throw new Error("Erro: "+response.status);
+        }
+        catch (e) {
+            console.error(e);
+        }
+    }
+
+    async function listaEnderecos() {
+        const options = {
+            method: "GET"
+        }
+        try {
+            const response = await fetch("address", options)
+            if (!response.ok)
+                throw new Error("Erro: "+response.status);
+            const endereco = await response.json();
+            console.log(endereco)
+        }
+        catch (e) {
+            console.error(e);
+        }
     }
 
     window.onload = function () {
         const inputCep = document.querySelector("#cep");
-        inputCep.onkeyup = () => buscaEndereco(inputCep.value);
+        // const inputRua = document.querySelector("#rua");
+        // const inputBairro = document.querySelector("#bairro");
+        // const inputCidade = document.querySelector("#cidade");
+
+        const btnCepGET = document.getElementById("btnCepGET");
+        const btnCriarPOST = document.getElementById("btnCriarPOST");
+        const btnCepDELETE = document.getElementById("btnCepDELETE");
+        const btnListar = document.getElementById("btnListar");
+
+        btnCepGET.addEventListener("click", buscaEndereco(inputCep.value));
+        btnCriarPOST.addEventListener("click", criaEndereco());
+        btnCepDELETE.addEventListener("click", deletaEndereco(inputCep.value));
+        btnListar.addEventListener("click", listaEnderecos());
+
     }
 
 </script>
