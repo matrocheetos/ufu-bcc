@@ -12,9 +12,9 @@ public class AddressController {
 
     private List<Address> addresses = new ArrayList<>(
         Arrays.asList(
-            new Address("34800100", "Floriano Peixoto", "Centro", "Uberlândia"),
-            new Address("34800100", "Tiradentes", "Fundinho", "Uberlândia"),
-            new Address("34800100", "Lions Clube", "Osvaldo Rezende", "Uberlândia")
+            new Address("38400-100", "Floriano Peixoto", "Centro", "Uberlândia"),
+            new Address("38400-200", "Tiradentes", "Fundinho", "Uberlândia"),
+            new Address("38400-300", "Lions Clube", "Osvaldo Rezende", "Uberlândia")
         )
     );
 
@@ -37,10 +37,13 @@ public class AddressController {
     }
 
     @DeleteMapping("/address/{cep}")
-    public void deleteAddress(@PathVariable String cep) {
+    public ResponseEntity<Address> deleteAddress(@PathVariable String cep) {
         for (Address address : this.addresses)
-            if (address.getCep().equals(cep))
+            if (address.getCep().equals(cep)){
                 addresses.remove(address);
+                return ResponseEntity.ok(address);
+            }
+        return ResponseEntity.notFound().build();
     }
 
     @GetMapping("/hello")

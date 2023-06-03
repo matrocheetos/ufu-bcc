@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Teste API Restful</title>
@@ -23,7 +23,7 @@
 
     <form class="row g-3">
         <div>
-            <label for="cep" class="form-label">Informe o CEP no formato xxxxxxxx (Ex. 38400100)</label>
+            <label for="cep" class="form-label">Informe o CEP no formato xxxxx-xxx (Ex. 38400-100, 38400-200, 38400-300)</label>
             <input type="text" class="form-control" id="cep" name="cep">
         </div>
         <div>
@@ -45,7 +45,7 @@
             <button type="button" id="btnCriarPOST" class="btn btn-primary btn-block">Criar novo (POST)</button>
         </div>
         <div class="col-sm-12 d-grid">
-            <button type="button" id="btnCepDELETE" class="btn btn-primary btn-block">Apagar pelo CEP (DELETE)</button>
+            <button type="button" id="btnCepDELETE" class="btn btn-danger btn-block">Apagar pelo CEP (DELETE)</button>
         </div>
         <div class="col-sm-12 d-grid">
             <button type="button" id="btnListar" class="btn btn-primary btn-block">Listar todos endereços</button>
@@ -57,7 +57,10 @@
 <script>
 
     async function buscaEndereco(cep) {
-        if (cep.length != 8) return;
+        if (cep.length != 9) {
+            console.log("Formato de CEP inválido");
+            return;
+        }
         let form = document.querySelector("form");
 
         try {
@@ -105,7 +108,9 @@
 
     async function deletaEndereco(cep) {
         const options = {
-            method: "DELETE"
+            method: "DELETE",
+            body: JSON.stringify(cep),
+            headers: { 'Content-Type': 'application/json' }
         }
         try {
             const response = await fetch("address/"+cep, options)
@@ -135,19 +140,16 @@
 
     window.onload = function () {
         const inputCep = document.querySelector("#cep");
-        // const inputRua = document.querySelector("#rua");
-        // const inputBairro = document.querySelector("#bairro");
-        // const inputCidade = document.querySelector("#cidade");
 
         const btnCepGET = document.getElementById("btnCepGET");
         const btnCriarPOST = document.getElementById("btnCriarPOST");
         const btnCepDELETE = document.getElementById("btnCepDELETE");
         const btnListar = document.getElementById("btnListar");
 
-        btnCepGET.addEventListener("click", buscaEndereco(inputCep.value));
-        btnCriarPOST.addEventListener("click", criaEndereco());
-        btnCepDELETE.addEventListener("click", deletaEndereco(inputCep.value));
-        btnListar.addEventListener("click", listaEnderecos());
+        btnCepGET.addEventListener("click", function() {buscaEndereco(inputCep.value)}, false);
+        btnCriarPOST.addEventListener("click", criaEndereco);
+        btnCepDELETE.addEventListener("click", function() {deletaEndereco(inputCep.value)}, false);
+        btnListar.addEventListener("click", listaEnderecos);
 
     }
 
