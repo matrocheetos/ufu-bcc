@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/busca.css">
+  <link rel="stylesheet" href="styles/resultados.css">
+  <title>VepiExpress | Busca</title>
+</head>
+
+<body>
+  <header>
+    <svg width="230" height="42" viewBox="0 0 918 168" fill="currentColor">
+      <use xlink:href="vepiexpress.svg#VepiExpress"></use>
+    </svg>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="resultados.html">Busca</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+  </nav>
+
+  <div id="div-busca">
+    <form action="php/buscaAnuncios.php" method="post" id="formBusca" name="formBusca">
+      <div id="barra-busca">
+        <label for="input-busca"></label>
+        <input type="text" id="input-busca" name="input-busca" placeholder="Buscar na VepiExpress" value="">
+        <button type="submit" id="botao-busca">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
+      </div>
+      <div id="busca-av">
+        <div class="buscaAvancada">
+          <label for="avancada">Busca avançada:</label>
+          <select name="avancada" id="avancada">
+            <option value="titulo" selected>busca no título</option>
+            <option value="descricao">busca na descrição</option>
+          </select>
+        </div>
+        <div class="buscaAvancada">
+          <label for="precomin">Faixa de preço: R$</label>
+          <input type="number" step="0.01" id="precomin" name="precomin" min="0" max="99999999.99" placeholder="5,00"
+            value="">
+          <label for="precomax">~ R$</label>
+          <input type="number" step="0.01" id="precomax" name="precomax" min="1" max="99999999.99" placeholder="100,00"
+            value="">
+        </div>
+        <div class="buscaAvancada">
+          <label for="categoria">Selecione uma categoria:</label>
+          <select name="categoria" id="categoria">
+            <option value="-1" selected>Todas as categorias</option>
+            <!-- opções inseridas pelo javascript -->
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos Anunciados</h2>
+      <ul id="cards">
+        <template id="templ">
+          <li class="card template">
+            <a href="anuncio/produto.php?anuncio={{id_anuncio}}">
+              <img class="fotos" src="images/anuncio/foto{{id_anuncio}}.jpg" alt="imagem {{titulo}}">
+              <h2>{{titulo}}</h2>
+              <p>R$ {{preco}}</p>
+              <p id="desc">{{descricao}}</p>
+            </a>
+          </li>
+        </template>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 VepiExpress®™. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <script src="scripts/busca_anuncios.js"></script>
+  <script src="scripts/carrega_categorias.js"></script>
+
+  <script>
+    window.onload = function () {
+      // carrega opções de categorias
+      carregaCategorias();
+
+      // envio do form busca
+      const form = document.querySelector("#formBusca");
+      form.onsubmit = function (e) {
+        
+        // reseta cards
+        document.querySelectorAll('.card').forEach(elemento => {
+          if (elemento.parentElement != "template")
+            elemento.parentNode.removeChild(elemento);
+        });
+
+        // faz busca com dados do form
+        buscaAnuncios(form);
+        e.preventDefault();
+      }
+
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+notas p2
+
+q1: 0 / 10
+q2: 2 / 8
+q3: 6 / 12
+
+nota projeto: 13 / 20

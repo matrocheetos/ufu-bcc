@@ -1,0 +1,65 @@
+main {
+    font-size: large;
+    color: dimgray;
+
+    background-color: white;
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 40px 40px 10px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px gray;
+}
+
+.campo {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+input,
+button {
+    width: 100%;
+    margin: 10px 0 5px 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+button {
+    background-color: #e03930;
+    color: white;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #e03930;
+    box-sizing: border-box;
+}
+
+span {
+    color: firebrick;
+    font-size: medium;
+    text-align: center;
+}
+
+#loginFailMsg {
+    color: firebrick;
+    display: none;
+    text-align: center;
+}
+
+#cadastroFailMsg {
+    color: firebrick;
+    display: none;
+    text-align: center;
+}
+
+#cadastroSuccessMsg {
+    color: green;
+    display: none;
+    text-align: center;
+}

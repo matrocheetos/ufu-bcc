@@ -1,0 +1,39 @@
+.anuncioItem {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.preco {
+    color: orangered;
+    text-align: right;
+    font-weight: 700;
+    font-size: 20px;
+
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    position: absolute;
+    width: 100%;
+    top: 1.5rem;
+}
+
+.data {
+    color: gray;
+    text-align: right;
+    font-size: 20px;
+    font-style: italic;
+
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    position: absolute;
+    width: 100%;
+    top: 1.5rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}

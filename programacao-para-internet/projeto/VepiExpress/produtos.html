@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/busca.css">
+  <link rel="stylesheet" href="styles/resultados.css">
+  <title>VepiExpress | Anuncios</title>
+</head>
+
+<body>
+  <header>
+    <svg width="230" height="42" viewBox="0 0 918 168" fill="currentColor">
+      <use xlink:href="vepiexpress.svg#VepiExpress"></use>
+    </svg>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="resultados.html">Busca</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos Anunciados</h2>
+      <ul id="cards">
+        <template id="templ">
+          <li class="card template">
+            <a href="anuncio/produto.php?anuncio={{id_anuncio}}">
+              <img class="fotos" src="images/anuncio/foto{{id_anuncio}}.jpg" alt="imagem {{titulo}}">
+              <h2>{{titulo}}</h2>
+              <p>R$ {{preco}}</p>
+              <p id="desc">{{descricao}}</p>
+            </a>
+          </li>
+        </template>
+      </ul>
+    </section>
+    <div class="centraliza">
+      <a href="#" id="botaoAnterior" class="anterior">&#8249;</a>
+      <label for="paginaAtual"></label>
+      <input type="text" id="paginaAtual" name="paginaAtual" value="1" readonly>
+      <a href="#" id="botaoProximo" class="proximo">&#8250;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2023 VepiExpress®™. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <script src="scripts/busca_anuncios.js"></script>
+
+  <script>
+    function resetaCards() {
+      // reseta cards
+      document.querySelectorAll('.card').forEach(elemento => {
+        if (elemento.parentElement != "template")
+          elemento.parentNode.removeChild(elemento);
+      });
+    }
+
+    window.onload = function () {
+      getAnuncios(1);
+
+      const botaoAnterior = document.getElementById("botaoAnterior");
+      const botaoProximo = document.getElementById("botaoProximo");
+      const elemPaginaAtual = document.getElementById("paginaAtual")
+      let paginaAtual = parseInt(elemPaginaAtual.value);
+
+      botaoAnterior.addEventListener("click", () => {
+        resetaCards();
+        // pagina anterior
+        paginaAtual -= 1;
+        if (paginaAtual < 1)
+          paginaAtual = 1;
+
+        getAnuncios(paginaAtual);
+        elemPaginaAtual.value = paginaAtual;
+      });
+
+      botaoProximo.addEventListener("click", () => {
+        resetaCards();
+        // prox pagina
+        paginaAtual += 1;
+
+        getAnuncios(paginaAtual);
+        elemPaginaAtual.value = paginaAtual;
+      });
+
+    }
+  </script>
+
+</body>
+
+</html>

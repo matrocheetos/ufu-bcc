@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/busca.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>VepiExpress</title>
+</head>
+
+<body>
+  <header>
+    <svg width="230" height="42" viewBox="0 0 918 168" fill="currentColor">
+      <use xlink:href="vepiexpress.svg#VepiExpress"></use>
+    </svg>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="resultados.html">Busca</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="./anunciante/anunciante.php">Página do anunciante</a></li>
+    </ul>
+  </nav>
+
+  <div id="div-busca">
+    <h2>Procure aqui um produto:</h2>
+    <div id="barra-busca">
+      <label for="input-busca"></label>
+      <input type="text" id="input-busca" name="busca" placeholder="Buscar na VepiExpress">
+      <button type="button" id="botao-busca">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+          viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <h1>Um pouco sobre a VepiExpress</h1>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VepiExpress era uma empresa de comércio eletrônico que permitia que pessoas vendessem produtos on-line.
+      A plataforma permitia que indivíduos e empresas de todo o mundo se cadastrarem e oferecessem seus produtos
+      diretamente aos consumidores. Os vendedores podiam listar seus produtos em diversas categorias, desde
+      eletrônicos até moda, e os compradores podiam encontrar o que precisavam com facilidade.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A plataforma da VepiExpress era fácil de usar e contava com recursos para proteger tanto os vendedores
+      quanto os compradores. A empresa oferecia diversas opções de pagamento e entregava produtos em todo o mundo.
+      Além disso, a VepiExpress também contava com um sistema de avaliação que ajudava os compradores a tomar
+      decisões informadas sobre as compras que desejavam fazer.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com o tempo, a VepiExpress se tornou uma das maiores empresas de comércio eletrônico do mundo, com milhões
+      de vendedores e compradores registrados em sua plataforma. A empresa continuou a investir em melhorias em sua
+      plataforma, oferecendo recursos avançados de gerenciamento de vendas para os vendedores e garantindo a
+      satisfação dos clientes em todo o mundo. A VepiExpress se tornou um símbolo de confiança e conveniência para
+      aqueles que queriam comprar ou vender produtos on-line.
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2023 VepiExpress®™. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    window.onload = function () {
+      const botaoBusca = document.getElementById("botao-busca");
+      botaoBusca.addEventListener("click", () => {
+        window.location.href = 'resultados.html';
+      });
+    }
+  </script>
+
+</body>
+
+</html>

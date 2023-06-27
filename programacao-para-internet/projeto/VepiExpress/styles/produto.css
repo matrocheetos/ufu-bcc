@@ -1,0 +1,78 @@
+main {
+  padding: 20px 0;
+  margin: 30px auto;
+}
+
+img {
+  margin: 0 50px 0 2rem;
+  width: 300px;
+  height: 300px;
+  max-width: 300px; 
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+h1 {
+  margin: 30px 0 40px 0;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 40px;
+  color: orangered;
+  margin-bottom: 30px;
+}
+
+div>p {
+  font-size: 24px;
+  margin: 20px 0 30px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+#layoutProd {
+  display: flex;
+}
+
+#produto {
+  display: block;
+  margin: 10px;
+}
+
+#amei{
+  height: 40px;
+  width: 100px;
+  color: black;
+}
+
+#amei:hover {
+  color: red;
+}
+
+@media (max-width: 700px){
+  #layoutProd{
+    display: block;
+  }
+}
+
+.campo {
+  margin: 0 2rem 0 2rem;
+  padding: 0;
+}
+
+.titulo{
+  text-align: center;
+}
+
+h3{
+  margin: 40px 0 20px;
+  font-size: 30px;
+}
+
+hr{
+  width: 91%;
+  margin: 30px auto 0;
+}

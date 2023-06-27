@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/busca.css">
+  <link rel="stylesheet" href="styles/resultados.css">
+  <title>VepiExpress | Resultados</title>
+</head>
+
+<body>
+  <header>
+    <svg width="230" height="42" viewBox="0 0 918 168" fill="currentColor">
+      <use xlink:href="vepiexpress.svg#VepiExpress"></use>
+    </svg>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="resultados.html">Resultados</a></li>
+      <li><a href="produto.html">Produto</a></li>
+    </ul>
+  </nav>
+
+  <div id="div-busca">
+    <form action="" method="post" id="formBusca" name="formBusca">
+      <div id="barra-busca">
+        <label for="input-busca"></label>
+        <input type="text" id="input-busca" name="input-busca" placeholder="Buscar na VepiExpress">
+        <button type="submit" id="botao-busca">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
+      </div>
+      <div id="busca-av">
+        <div class="buscaAvancada">
+          <label for="avancada">Busca avançada:</label>
+          <select name="avancada" id="avancada">
+            <option value="titulo">busca no título</option>
+            <option value="descricao">busca na descrição</option>
+          </select>
+        </div>
+        <div class="buscaAvancada">
+          <label for="precomin">Faixa de preço: R$</label>
+          <input type="number" id="precomin" name="precomin" min="0" max="1000000" placeholder="15,00">
+          <label for="precomax">~ R$</label>
+          <input type="number" id="precomax" name="precomax" min="1" max="1000000" placeholder="100,00">
+        </div>
+        <div class="buscaAvancada">
+          <label for="categoria">Selecione uma categoria:</label>
+          <select name="categoria" id="categoria">
+            <option value="">Todas as categorias</option>
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="roupas">Roupa feminina</option>
+            <option value="relogios">Jóias e Relógios</option>
+            <option value="computadores">Computadores</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos Anunciados</h2>
+      <ul id="cards">
+        <li>
+          <a href="">
+            <img class="fotos" src="images/feminina1.jpg" alt="roupa feminina 1">
+            <h2>Regata Feminina</h2>
+            <p>R$ 25,99</p>
+            <p id="desc">
+              Regata feminina muito linda bem barata cor verde muito top
+              tecido de malhar lá seda gostosa de usar recomendo seu sonho
+              é usar uma desas pq e comfortável pra krl pqp que delicia de
+              roupa pra usar em casa
+            </p>
+          </a>
+        </li>
+        <li>
+          <img class="fotos" src="images/feminina2.jpg" alt="roupa feminina 2">
+          <h2>Regata Feminina Cavada</h2>
+          <p>R$ 32,99</p>
+          <em></em>
+        </li>
+        <li>
+          <img class="fotos" src="images/feminina3.jpg" alt="roupa feminina 3">
+          <h2>Kit Regatas Feminino</h2>
+          <p>R$ 76,99</p>
+          <em>3 regatas por kit, todas as cores e tamanhos</em>
+        </li>
+        <li>
+          <img class="fotos" src="images/regata1.jpg" alt="regata 1">
+          <h2>Regata Masculina</h2>
+          <p>R$ 56,99</p>
+          <em></em>
+        </li>
+        <li>
+          <img class="fotos" src="images/regata2.jpg" alt="regata 2">
+          <h2>Kit Regatas Masculino</h2>
+          <p>R$ 89,99</p>
+          <em></em>
+        </li>
+        <li>
+          <img class="fotos" src="images/regata3.jpg" alt="regata 3">
+          <h2>Regata Simples Feminina</h2>
+          <p>R$ 15,99</p>
+          <em></em>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 VepiExpress®™. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>

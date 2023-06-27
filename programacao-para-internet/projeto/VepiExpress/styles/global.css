@@ -1,0 +1,82 @@
+html {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    height: 100%;
+}
+
+header {
+    background-color: white;
+    padding: 5px 20px;
+}
+
+/* ---------------------------- */
+/* barra de navegação */
+nav {
+    background-color: #e03930;
+    text-align: center;
+
+    margin: 0;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+}
+
+nav a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+/* ---------------------------- */
+/* corpo */
+body {
+    background-color: #f79730;
+    height: 100%;
+}
+
+main {
+    background-color: white;
+    width: 95%;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    display: block;
+
+    /* footer no fim da pagina */
+    position: sticky;
+    top: 100vh;
+
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* ---------------------------- */
+/* adaptação ao tamanho da janela */
+@media (min-width: 1048px) {
+    main {
+        width: 70%;
+    }
+}
