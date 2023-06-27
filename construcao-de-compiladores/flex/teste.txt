@@ -1,0 +1,8 @@
+thenmmm
+themmmn
+123asbd
+if 987>23 then
+    23<987
+else /* teste */
+    2/4
+fim_do_teste

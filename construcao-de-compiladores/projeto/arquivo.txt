@@ -1,0 +1,15 @@
+function nome_programa ()
+{
+	int : testeint, testeint2;
+	float : testefloat;
+	float : testeexp;
+	float : testeexp2;
+	char : a;
+
+	testeint = 23049;
+	testefloat = 12.453;
+	testeexp = 12E2;
+	testeexp2 = 12.0E2;
+	a = 'x';
+	
+}
