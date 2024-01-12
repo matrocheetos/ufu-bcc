@@ -1,0 +1,42 @@
+Resultado para dimensão: 16
+===============================================================
+Optimization Result
+===================
+  Iteration:       1000
+  Minimum:         75.7701
+  Minimizer:       [-4.20601, 8.22588, -4.2437, …, 1.01101]
+  Function calls:  160000
+  Total time:      0.7450 s
+  Stop reason:     Maximum objective function calls exceeded.
+
+Resultado para dimensão: 24
+===============================================================
+Optimization Result
+===================       
+  Iteration:       1000   
+  Minimum:         83.2644
+  Minimizer:       [-4.26043, -4.30152, 1.30959, …, -3.55241]
+  Function calls:  240000
+  Total time:      1.3620 s
+  Stop reason:     Maximum objective function calls exceeded.
+
+Resultado para dimensão: 32
+===============================================================
+Optimization Result
+  Iteration:       1000
+  Minimum:         94.0879
+  Minimizer:       [1.15089, -8.25623, 1.40832, …, 1.02277]   
+  Function calls:  320000
+  Total time:      2.2190 s
+  Stop reason:     Maximum objective function calls exceeded. 
+
+Resultado para dimensão: 64
+===============================================================                                                             =
+Optimization Result
+===================
+  Iteration:       1000
+  Minimum:         165.223
+  Minimizer:       [7.79431, -8.1936, 3.54302, …, 0.870578]   
+  Function calls:  640000
+  Total time:      7.4860 s
+  Stop reason:     Maximum objective function calls exceeded.

@@ -1,0 +1,9 @@
+8.95,Mike Powell,Estados Unidos,30 agosto 1991,Tóquio
+8.90,Bob Beamon,Estados Unidos,18 outubro 1968,Cidade do México
+8.87,Carl Lewis,Estados Unidos,30 agosto 1991,Tóquio
+8.86,Robert Emmiyan,URSS,22 maio 1987,Tsakhkadzor
+7.52,Galina Chistyakova,URSS,11 junho 1988,Leningrado
+7.49,Jackie Joyner-Kersee,Estados Unidos,22 maio 1994,Nova York
+7.48,Heike Drechsler,Alemanha,9 julho 1988,Neubrandenburg 
+8.40,Douglas de Sousa,Brasil,15 fevereiro 1995,São Paulo
+7.26,Maurren Maggi,Brasil,25 junho 1999,Bogotá
